@@ -1,0 +1,33 @@
+#logo-01 {
+    stroke: #000; /* 文字色 */
+    fill: none; /* 塗りつぶし無し */
+    stroke-dasharray:  4000; /* 破線の間隔 */
+    stroke-dashoffset: 4000; /* 破線の開始位置 */
+    animation: DASH 8s ease-in-out alternate 0s forwards;
+    width: 25vw;
+    display: block;
+    margin: auto;
+}
+
+@keyframes DASH {
+    0% {
+        stroke-dashoffset: 4000;
+        }
+    100% {
+        stroke-dashoffset: 0;
+        }
+    }
+
+#first-animation {
+    position: fixed;
+    top: -20px;
+    /* bottom: 0; */
+    left: 33%;
+    /* right: 0; */
+    width: 33vw;
+    height: 300px;
+    margin: auto;
+    padding-top: 100px;
+    background-color: transparent;
+    z-index: 100;
+}

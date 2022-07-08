@@ -1,0 +1,107 @@
+body#works {
+    font-family: 'A-OTF 中ゴシックBBB Pr6N Med', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-visual {
+    text-align: center;
+    background-image: none;
+    height: 80vh;
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+.main-visual img {
+    width: 300px;
+}
+
+#works .character .text {
+    text-align-last: left;
+    width: 400px;
+}
+
+.cat-wrap {
+    position: absolute;
+    height: 110vh;
+    width: 100vw;
+    overflow: hidden;
+}
+#cat {
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    transform: translateX(-100%);
+    animation: walk 10s linear infinite;
+    z-index: 10;
+}
+@keyframes walk {
+    0%{
+        transform: translateX(-100%) translateY(-100px);
+    }
+    100%{
+        transform: translateX(100vw) translateY(0);
+    }
+}
+
+.first-view h1 {
+    text-align: center;
+    font-size: 40px;
+    width: 450px;
+    margin: 0 auto;
+    border: 3px solid #ebf5fc;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px 0px skyblue inset, 
+    -2px -2px 3px 0px white inset, 
+    2px 2px 3px 0px skyblue, 
+    -2px -2px 3px 0px white;
+}
+.first-view .date {
+    text-align: right;
+}
+
+
+.ideas img {
+    width: 20%;
+}
+
+.anothers {
+    font-size: 24px;
+}
+
+#works section {
+    margin: 50px 0;
+}
+
+.content .text {
+    padding:0 50px;
+}
+.image h1 {
+    margin: 10px 0;
+    text-align: center;
+}
+.content:nth-child(even) .flex {
+    flex-direction: row-reverse;
+}
+
+table {
+    border-collapse: collapse;
+}
+table tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+th {
+    width: 200px;
+}
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.persona > div{
+    position: relative;
+}
+
+.persona .cat {
+    width: 60px;
+    position: absolute;
+    top: -70px;
+    left: 30px;
+}

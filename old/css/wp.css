@@ -1,0 +1,32 @@
+.page .content,
+.page section.container,
+.post section.container,
+section.container.page {
+    margin-top: 100px;
+}
+
+/* 個別投稿ページのCSS */
+.post li {
+    list-style-type: disc;
+}
+
+.post h2 {
+    margin: 20px 0;
+}
+
+.post.sec-title-en {
+    font-size: 32px;
+}
+
+.post a:hover {
+    opacity: 0.8;
+}
+
+.wp-block-image img {
+    object-fit: contain;
+}
+
+.tool ul {
+    width: 300px;
+    margin: 20px auto;
+}

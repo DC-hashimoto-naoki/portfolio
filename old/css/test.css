@@ -1,0 +1,6 @@
+#pen {
+    width: 50%;
+    background-image: url(../images/pen-shadow.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
