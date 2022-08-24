@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brushup（ブラッシュアップ）- 制作物のチェックをDX化</title>
+    <meta name="description"
+        content="Brushup（ブラッシュアップ）は、デザイン、ドキュメント、動画などの制作物のチェックをDX化するレビューツールです。制作物のやりとり、フィードバック、工程管理、これらすべてをブラウザ１つで完結できます。まずは無料でお試しください。">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="./images/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+
+    <meta property="og:title" content="Brushup（ブラッシュアップ）- 制作物のチェックをDX化" />
+    <meta property="og:description"
+        content="Brushup（ブラッシュアップ）は、デザイン、ドキュメント、動画などの制作物のチェックをDX化するレビューツールです。制作物のやりとり、フィードバック、工程管理、これらすべてをブラウザ１つで完結できます。まずは無料でお試しください。" />
+    <meta property="og:site_name" content="Brushup" />
+    <meta property="og:image" content="https://www.brushup.net/wp-content/uploads/sites/5/2019/11/brushup_ogp.jpg" />
+
+    <!-- START slick set -->
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="slick/slick.min.js"></script>
+    <!-- END slick set -->
+
+    <script src="js/main.js"></script>
+    <script src="js/getImageSize.js"></script>
+    <script src="js/interSectionObverver.js"></script>
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVVHJLD" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <main class="main">
+        <section class="fv">
+            <div class="main_visual">
+                <div class="fv_top">
+                    <img class="margin-x-auto top_communication" src="./images/fv/communication.png" alt="">
+                    <div class="fv_top_block01">
+                        <img class="margin-x-auto top_problem" src="./images/fv/problem.png" alt="">
+                        <img class="margin-x-auto top_brushup" src="./images/fv/brushup.png" alt="">
+                        <img class="margin-x-auto top_resolve" src="./images/fv/resolve.png" alt="">
+                    </div>
+                    <img class="margin-x-auto top_companies" src="./images/fv/companies.png" alt="">
+                    <img class="fv_fukidashi" src="./images/fv/fukidashi.png" alt="">
+                </div>
+                <div class="fv_slider__wrapper">
+                    <ul class="fv_slider">
+                        <li class="fv_slider_item">
+                            <img class="picture_bg picture_bg_01" src="./images/fv/picture_bg_01.png" alt="">
+                        </li>
+                        <li class="fv_slider_item">
+                            <img class="picture_bg picture_bg_02" src="./images/fv/picture_bg_02.png" alt="">
+                        </li>
+                        <li class="fv_slider_item">
+                            <img class="picture_bg picture_bg_03" src="./images/fv/picture_bg_03.png" alt="">
+                        </li>
+                    </ul>
+                    <img class="fv_logo" src="./images/fv/logo.png" alt="">
+                    <img class="fv_comment comment_01" src="./images/fv/comment_01.png" alt="">
+                    <img class="fv_comment comment_02" src="./images/fv/comment_02.png" alt="">
+                    <img class="fv_comment comment_03" src="./images/fv/comment_03.png" alt="">
+                </div>
+                <img src="./images/fv/fv_bottom.png" alt="">
+            </div>
+            <div class="slider_area">
+                <h2 class="slider_title">
+                    <img class="margin-x-auto fv_title_companies" src="./images/fv/title_companies.png" alt="">
+                </h2>
+                <h3 class="slider_subtitle">
+                    さまざまな業種、さまざまな制作物、さまざまなやりとり<br>
+                    あなたの企業にあった使い方ができます
+                </h3>
+                <div class="slider_content target02">
+                    <ul class="slider__list slider__list--top">
+                        <li class="slider__item"><img src="./images/logos/gree.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/mynavi.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/kobe.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/BU_logo_100pix_01.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/BU_logo_100pix_02.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/BU_logo_100pix_03.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/BU_logo_100pix_04.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/BU_logo_100pix_05.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/BU_logo_100pix_06.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/BU_logo_100pix_07.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/BU_logo_100pix_08.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/BU_logo_100pix_09.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/BU_logo_100pix_10.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/BU_logo_100pix_11.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/gree.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/mynavi.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/kobe.png" alt=""></li>
+                    </ul>
+                    <ul class="slider__list slider__list--bottom">
+                        <li class="slider__item"><img src="./images/logos/senju.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/hankyu.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/marvelous.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/BU_logo_100pix_13.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/BU_logo_100pix_14.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/BU_logo_100pix_15.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/BU_logo_100pix_18.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/BU_logo_100pix_19.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/BU_logo_100pix_20.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/BU_logo_100pix_21.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/BU_logo_100pix_22.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/BU_logo_100pix_24.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/BU_logo_100pix_26.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/BU_logo_100pix_28.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/senju.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/hankyu.png" alt=""></li>
+                        <li class="slider__item"><img src="./images/logos/marvelous.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fv_bar"></div>
+            <div class="appeal_dx">
+                <img class="margin-x-auto fv_question_image" src="./images/fv/question.png" alt="">
+                <img class="margin-x-auto fv_solution_image" src="./images/fv/solution.png" alt="">
+                <img class="margin-x-auto dx_image target04" src="./images/fv/dx.png" alt="">
+                <img class="margin-x-auto" src="./images/fv/service.png" alt="">
+            </div>
+            <video src="./images/case/brushup_kijiLP_01.mp4" autoplay loop muted playsinline></video>
+            <div class="fv_bottom">
+                <p class="fv_bottom_text">
+                    イラスト、雑誌、動画、パッケージなどに<br>
+                    関わる色々な企業様が「制作物」の進行や、<br>
+                    やりとりに解決したい<br>
+                    課題・お悩みを抱えています。
+                </p>
+                <img class="fv_scroll margin-x-auto" src="./images/fv/scroll.png" alt="">
+            </div>
+        </section>
+        <section class="case">
+            <div class="case_item case01 target">
+                <img class="case_bg case_bg_01" src="./images/case/case_01.png" alt="">
+                <img class="case_face case_01_face" src="./images/case/case_01_face.png" alt="">
+                <img class="case_title case_01_title" src="./images/case/case_01_title.png" alt="">
+                <img class="case_arrow case_01_arrow" src="./images/case/arrow_orange.png" alt="">
+            </div>
+            <div class="case_item case02 target">
+                <img class="case_bg case_bg_02" src="./images/case/case_02.png" alt="">
+                <img class="case_face case_02_face" src="./images/case/case_02_face.png" alt="">
+                <img class="case_title case_02_title" src="./images/case/case_02_title.png" alt="">
+                <img class="case_arrow case_02_arrow" src="./images/case/arrow_black.png" alt="">
+            </div>
+            <div class="case_item case03 target">
+                <img class="case_bg case_bg_03" src="./images/case/case_03.png" alt="">
+                <img class="case_face case_03_face" src="./images/case/case_03_face.png" alt="">
+                <img class="case_title case_03_title" src="./images/case/case_03_title.png" alt="">
+                <img class="case_arrow case_03_arrow" src="./images/case/arrow_orange.png" alt="">
+            </div>
+            <div class="case_item case04 target">
+                <img class="case_bg case_bg_04" src="./images/case/case_04.png" alt="">
+                <img class="case_face case_04_face" src="./images/case/case_04_face.png" alt="">
+                <img class="case_title case_04_title" src="./images/case/case_04_title.png" alt="">
+                <img class="case_arrow case_04_arrow" src="./images/case/arrow_orange.png" alt="">
+            </div>
+            <div class="case_item case05 target">
+                <img class="case_bg case_bg_05" src="./images/case/case_05.png" alt="">
+                <img class="case_face case_05_face" src="./images/case/case_05_face.png" alt="">
+                <img class="case_title case_05_title" src="./images/case/case_05_title.png" alt="">
+                <img class="case_arrow case_05_arrow" src="./images/case/arrow_black.png" alt="">
+            </div>
+            <div class="case_item case06 target">
+                <img class="case_bg case_bg_06" src="./images/case/case_06.png" alt="">
+                <img class="case_face case_06_face" src="./images/case/case_06_face.png" alt="">
+                <img class="case_title case_06_title" src="./images/case/case_06_title.png" alt="">
+            </div>
+        </section>
+        <section class="point" id="point">
+            <div class="float_banner__wrapper">
+                <div class="float_box__wrapper">
+                    <img class="float_box" src="./images/float/float_box.png" alt="">
+                    <div class="float_box_btn">
+                        <a href="https://register.brushup.net/userbases/interim_signup">
+                            <img src="./images/float/trial02.png" alt="">
+                        </a>
+                        <a href="http://www.brushup.net/documents/">
+                            <img src="./images/float/document.png" alt="">
+                        </a>
+                    </div>
+                    <img class="close_btn" src="./images/float/close_btn.png" alt="">
+                </div>
+            </div>
+            <div class="float__bottom">
+                <ul class="float_list">
+                    <li class="float_item"><a href="https://register.brushup.net/userbases/interim_signup"><img
+                                src="./images/float/trial.png" alt=""></a></li>
+                    <li class="float_item"><a href="https://www.brushup.net/documents/"><img
+                                src="./images/float/achievement.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="point_top" id="point_top">
+                <img class="margin-x-auto" src="./images/point/solution.png" alt="">
+                <img class="feedback" src="./images/point/feedback.png" alt="">
+                <div class="point_bar"></div>
+            </div>
+            <div class="point_list">
+                <div class="point_list_item point01">
+                    <h2 class="point_item_title"><img class="margin-x-auto" src="./images/point/point_01.png" alt="">
+                    </h2>
+                    <h3 class="point_item_subtitle">
+                        確認しやすいスレッド・<br>
+                        タイムライン形式での<br>
+                        <span class="point_strong target">進行管理</span>
+                    </h3>
+                    <div class="point_content point_contetn01">
+                        <video src="./images/point/brushup_kijiLP_02R.mp4" autoplay loop muted playsinline></video>
+                        <p class="point_content_text">
+                            スレッド形式、タイムライン上で制作進行ができ、「先祖返り」が起きづらく、現段階の制作ステイタスが把握しやすい！誰がどのような状態で停滞が起こっているのかも一目瞭然です！
+                        </p>
+                    </div>
+                </div>
+                <div class="point_list_item point02">
+                    <h2 class="point_item_title"><img class="margin-x-auto" src="./images/point/point_02.png" alt="">
+                    </h2>
+                    <h3 class="point_item_subtitle">
+                        やり取りした制作物、<br>
+                        赤入れのデータを<br>
+                        <span class="point_strong target">一元管理</span>
+                    </h3>
+                    <div class="point_content point_contetn02">
+                        <video src="./images/point/brushup_kijiLP_03R.mp4" autoplay loop muted playsinline></video>
+                        <p class="point_content_text">
+                            一箇所でデータ管理ややり取りを行うので、データ共有の作業が大幅に効率化できる！クラウド上で大容量のデータを安心に管理できます！ </p>
+                    </div>
+                </div>
+                <div class="point_list_item point03">
+                    <h2 class="point_item_title"><img class="margin-x-auto" src="./images/point/point_03.png" alt="">
+                    </h2>
+                    <h3 class="point_item_subtitle">
+                        ストレス、手間のない<br>
+                        <span class="point_strong target">フィードバック<span class="point03_strong">（赤入れ機能）</span></span>
+                    </h3>
+                    <div class="point_content point_contetn03">
+                        <video src="./images/point/brushup_kijiLP_04R.mp4" autoplay loop muted playsinline></video>
+                        <p class="point_content_text">
+                            静止画、動画、音声に赤入れが可能、もうPDFに出力したりスキャンの必要がなく、わかりやすいUIで赤入れのストレスがありません！
+                    </div>
+                </div>
+                <div class="point_list_item point04">
+                    <h2 class="point_item_title"><img class="margin-x-auto" src="./images/point/point_04.png" alt="">
+                    </h2>
+                    <h3 class="point_item_subtitle">
+                        使いやすい便利な<br>
+                        プロジェクト<br>
+                        <span class="point_strong target">管理機能</span>
+                    </h3>
+                    <div class="point_content point_contetn04">
+                        <img src="./images/point/point04_image.png" alt="">
+                        <p class="point_content_text">
+                            複数の制作プロジェクトの進捗が可視化されているガントチャート機能もあって、直観的な進捗確認が可能です！
+                    </div>
+                </div>
+                <div class="point_list_item point05">
+                    <h2 class="point_item_title"><img class="margin-x-auto" src="./images/point/point_05.png" alt="">
+                    </h2>
+                    <h3 class="point_item_subtitle">
+                        社外の人も参加しやすい<br>
+                        <span class="point_strong target">コラボレーション機能</span>
+                    </h3>
+                    <div class="point_content point_contetn05">
+                        <video src="./images/point/brushup_kijiLP_05R.mp4" autoplay loop muted playsinline></video>
+                        <p class="point_content_text">
+                            外部パートナー、クライアントと連携できる機能が充実していておすすめしやすい！すぐに連携ができて、コミュニケーションコストも削減可能！
+                            ※外部ツールとの連携も行っています。
+                        </p>
+                    </div>
+                </div>
+                <div class="point_list_item point06">
+                    <h2 class="point_item_title"><img class="margin-x-auto" src="./images/point/point_06.png" alt="">
+                    </h2>
+                    <h3 class="point_item_subtitle">
+                        <span class="point_strong target">専用ソフトがなくても</span><br>
+                        確認・レビュー・赤入れが<br>
+                        ラクラク可能！
+                    </h3>
+                    <div class="point_content point_contetn06">
+                        <video src="./images/point/brushup_kijiLP_06.mp4" autoplay loop muted playsinline></video>
+                        <p class="point_content_text">
+                            静止画、動画、ドキュメント、音楽等様々な形式をそのままアップするだけでレビューが開始されます。専門ソフトを互いやチームが全て共有する必要はありません！
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feature">
+            <h2 class="feature_title target">
+                <img class="feature_title" src="./images/feature/title.png" alt="">
+                <img class="feature_subtitle" src="./images/feature/subtitle.png" alt="">
+            </h2>
+            <div class="feature_list">
+                <div class="feature_list_item feature01">
+                    <img class="feature_icon target04" src="./images/feature/icon_01.png" alt="">
+                    <div class="feature_box feature_box01">
+                        <h3 class="feature_box__title">赤入れ機能</h3>
+                        <h4 class="feature_box__subtitle">
+                            面倒なファイルのダウンロードや印刷＆スキャンは不要。ブラウザやアプリ上で制作物のチェックとフィードバックが完結します。
+                        </h4>
+                        <div class="movie_box">
+                            <video src="./images/feature/brushup_LP_check.mp4" autoplay loop muted playsinline></video>
+                            <h5 class="movie_title">手書き感覚での赤入れを実現</h5>
+                            <p class="movie_description">
+                                イラスト・動画・ドキュメントなど、様々な形式のファイルに対して手書きでの赤入れができます。ペンをつかうとさらに細かく詳細に書き込むこともできます。
+                            </p>
+                        </div>
+                        <div class="movie_box">
+                            <video src="./images/feature/brushup_LP_sabun.mp4" autoplay loop muted playsinline></video>
+                            <h5 class="movie_title">レビュー画面で修正前後を左右に並べて確認</h5>
+                            <p class="movie_description">
+                                制作物を横に並べて確認できます。修正前後の比較や、指摘内容が反映できているかなど、迅速に確認できます。更に、2つの画像を重ね合わせての確認も可能です。
+                            </p>
+                        </div>
+                        <div class="movie_box movie_box">
+                            <video src="./images/feature/brushup_LP_moviecheck_R.mp4" autoplay loop muted
+                                playsinline></video>
+                            <h5 class="movie_title">動画や音声もシンプルな操作でレビュー</h5>
+                            <p class="movie_description">
+                                AVI、MP4、MOV等、様々な形式の動画にレビューが可能。自分の止めたい箇所で停止させて、直接コメントや指示の記入ができます。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature_list_item feature02">
+                    <img class="feature_icon target04" src="./images/feature/icon_02.png" alt="">
+                    <div class="feature_box">
+                        <h3 class="feature_box__title">タイムライン</h3>
+                        <h4 class="feature_box__subtitle">
+                            制作物ごとにスレッドを管理するので、ファイルやコメントが集約されます。チャットのようにタイムライン上でやりとりができ、誰が何を行ったか一目瞭然です。​
+                        </h4>
+                        <video src="./images/feature/brushup_LP_timeline_1.mp4" autoplay loop muted playsinline></video>
+                    </div>
+                </div>
+                <div class="feature_list_item feature03">
+                    <img class="feature_icon target04" src="./images/feature/icon_03.png" alt="">
+                    <div class="feature_box">
+                        <h3 class="feature_box__title">ゲスト・コラボレーション機能</h3>
+                        <h4 class="feature_box__subtitle">
+                            クライアントや外部スタッフとの連携も容易。プロジェクトごとにメンバー招待し、アイテムの追加やコメントの投稿など、操作権限を管理できます。
+                        </h4>
+                        <video src="./images/feature/brushup_LP_guestcolabo_R.mp4" autoplay loop muted
+                            playsinline></video>
+                    </div>
+                </div>
+                <div class="feature_list_item feature04">
+                    <img class="feature_icon target04" src="./images/feature/icon_04.png" alt="">
+                    <div class="feature_box">
+                        <h3 class="feature_box__title">差分検出機能</h3>
+                        <h4 class="feature_box__subtitle">
+                            横並びで制作物の表示させ、差分を自動検出します。差分箇所は任色で表示できるため一目瞭然で、見落としもなくなります。目で確認する時間や負荷を大幅に削減できます。
+                        </h4>
+                        <img src="./images/feature/difference_detection_show_hide.gif" alt="">
+                    </div>
+                </div>
+                <div class="feature_list_item feature05">
+                    <img class="feature_icon target04" src="./images/feature/icon_05.png" alt="">
+                    <div class="feature_box">
+                        <h3 class="feature_box__title">
+                            文章の校正・校閲を<br>
+                            支援する機能
+                        </h3>
+                        <h4 class="feature_box__subtitle">
+                            アップロードしたドキュメント内の指定した文字を検索、ヒットした文字列をフォーカス表示したり、「修正」「トル」「ルビ」といった校正記号を挿入したり、文字列のハイライトなど、文章の校正・校閲作業を行うための支援機能が充実しています。
+                        </h4>
+                        <img class="margin-x-auto feature05_image" src="./images/feature/feature05_image.png" alt="">
+                    </div>
+                </div>
+                <div class="feature_list_item feature06">
+                    <img class="feature_icon target04" src="./images/feature/icon_06.png" alt="">
+                    <div class="feature_box">
+                        <h3 class="feature_box__title">専用ソフトがなくても使える</h3>
+                        <h4 class="feature_box__subtitle">
+                            Adobe Illustrator、Adobe
+                            Photoshop、Officeドキュメント、PDFや各種動画などファイル形式を選ばず、ブラウザでチェックが可能。そのまま手描きやコメントでフィードバックすることができます。
+                        </h4>
+                        <video src="./images/feature/brushup_LP_data.mp4" autoplay loop muted playsinline></video>
+                    </div>
+                </div>
+            </div>
+            <div class="feature_slim">
+                <h2 class="slim_title">
+                    <img class="margin-x-auto" src="./images/feature/slim_title.png" alt="">
+                </h2>
+                <video class="movie_slim" src="./images/feature/brushup_kijiLP_07R.mp4" autoplay loop muted
+                    playsinline></video>
+            </div>
+            <div class="feature_bottom">
+                <div class="feature_bottom_box">
+                    <p class="feature_bottom_text-normal">
+                        本質的に必要なステップのみに<br>
+                        集中できます！
+                    </p>
+                    <p class="feature_bottom_text-large target04">
+                        無駄な<span class="feature_bottom_strong">工程を圧縮！</span>
+                    </p>
+                    <img class="margin-x-auto plus" src="./images/feature/plus.png" alt="">
+                    <p class="feature_bottom_text-large target04">
+                        印刷代などの<br>
+                        <span class="feature_bottom_strong">コストをカット！</span>
+                    </p>
+                    <img class="margin-x-auto plus" src="./images/feature/plus.png" alt="">
+                    <p class="feature_bottom_text-large target04">
+                        もっと<span class="feature_bottom_strong">考える時間</span>を<br>
+                        プラス！
+                    </p>
+                    <p class="feature_bottom_text-seminormal">
+                        <span class="text-bold-500">効率的にレビュー</span>する環境を<br>
+                        Brushupで実現し、<br>
+                        <span class="text-bold-500">制作物の質があがります！</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="voice">
+            <h2 class="voice_title">
+                <img class="margin-x-auto" src="./images/voice/title.png" alt="">
+                「いい制作はいいレビューから」<br>
+                を実現されている企業・団体様
+            </h2>
+            <div class="voice_list">
+                <div class="voice_list_item voice_item01">
+                    <div class="voice_item_picture voice_item_picture01">
+                        <img src="./images/voice/company01.png" alt="">
+                        <h3 class="company_name">株式会社 Discovery 様</h3>
+                        <p class="company_person">
+                            代表取締役社長 篠木隆秀さん<br>
+                            クリエイティブ局 マネージャー 西本祐大さん
+                        </p>
+                    </div>
+                    <div class="voice_item_text">
+                        <h4 class="voice_text_title">
+                            ネット広告制作スタッフの予定管理が劇的に改善、<br>
+                            ハイクオリティの広告を高い生産性で制作可能に
+                        </h4>
+                        <p class="voice_text_content">
+                            大阪でWebマーケティング事業を営む株式会社 Discovery 様は、2019年に Brushup
+                            を導入することで、スタッフの予定管理とネット広告の制作業務を劇的に効率化しました。社長の篠木隆秀様は「クライアントとともに Brushup
+                            を使用することで、広告のクオリティ向上にもつながっている」と語ります。
+                        </p>
+                        <a class="read_more_link" href="https://www.brushup.net/casestudy/discovery/">
+                            <p class="read_more">
+                                READ MORE
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="voice_list_item voice_item02">
+                    <div class="voice_item_picture voice_item_picture02">
+                        <img src="./images/voice/company02.png" alt="">
+                        <h3 class="company_name">神戸市 様</h3>
+                        <p class="company_person">
+                            市長室広報戦略部広報課<br>
+                            係長 和田大輔さん、上出雄ニさん
+                        </p>
+                    </div>
+                    <div class="voice_item_text">
+                        <h4 class="voice_text_title">
+                            iPad 活用で「紙とまったく同じ感覚」で<br>
+                            校正が可能に。作業時間と印刷コストが激減
+                        </h4>
+                        <p class="voice_text_content">
+                            月に1回、神戸市の市内全世帯、関連施設などに約84万部配布される『広報紙 KOBE』を制作しているお二人。制作の効率化をはかるために2019年7月から Brushup
+                            を導入し、係内とデザイン事務所とのやりとりに活用しています。iPad と併用することで、大幅な作業時間、印刷コストの削減を実現しました。
+                        </p>
+                        <a class="read_more_link" href="https://www.brushup.net/casestudy/kobe-city.html">
+                            <p class="read_more">
+                                READ MORE
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="voice_list_item voice_item03">
+                    <div class="voice_item_picture voice_item_picture03">
+                        <img src="./images/voice/company03.png" alt="">
+                        <h3 class="company_name">株式会社マイナビ 様</h3>
+                        <p class="company_person">
+                            転職情報事業本部 西日本制作進行部<br>
+                            部長 Aさん、課長 Bさん
+                        </p>
+                    </div>
+                    <div class="voice_item_text voice_item_text03">
+                        <h4 class="voice_text_title">
+                            130名超のスタッフの制作業務を圧倒的に効率化、<br>
+                            リモートワークでも万全な進行管理を実現
+                        </h4>
+                        <p class="voice_text_content">
+                            株式会社マイナビの転職情報事業本部・西日本制作進行部では、3年半前に求人サイト「マイナビ転職」の広告制作にBrushupを導入し、社内外130名のスタッフが活用されています。導入でデザイン進行全体が「見える化」し、業務効率化とともにテレワーク対応もスムーズに実現できたというお話を、ディレクターお二方に伺いました。
+                        </p>
+                        <a class="read_more_link" href="https://www.brushup.net/casestudy/mynavi/">
+                            <p class="read_more">
+                                READ MORE
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="plan">
+            <div class="plan_bar"></div>
+            <h2 class="plan_title">
+                <img class="margin-x-auto" src="./images/plan/plan_title.png" alt="">
+            </h2>
+            <div class="plan_bar"></div>
+
+            <div class="plan_slider_wrapper">
+                <h3 class="plan_slider_title">
+                    Brushupでは、<br>
+                    チーム規模や用途に応じて選べる4通りの<br>
+                    プランをご用意しました。
+                </h3>
+                <ul class="plan_slider_content">
+                    <li class="plan_slider_item plan_slider_01">
+                        <img class="plan_slider_image" src="./images/plan/slider--enrty.png" alt="">
+                        <a href="https://register.brushup.net/userbases/interim_signup">
+                            <img class="plan_btn btn_free cta" src="./images/plan/btn_free.png" alt="">
+                        </a>
+                    </li>
+                    <li class="plan_slider_item plan_slider_02">
+                        <img class="plan_slider_image" src="./images/plan/slider--light.png" alt="">
+                        <a href="https://www.brushup.net/price/">
+                            <img class="plan_btn btn_plan cta" src="./images/plan/btn_plan.png" alt="">
+                        </a>
+                    </li>
+                    <li class="plan_slider_item plan_slider_03">
+                        <img class="plan_slider_image" src="./images/plan/slider--standard.png" alt="">
+                        <a href="https://www.brushup.net/price/">
+                            <img class="plan_btn btn_plan cta" src="./images/plan/btn_plan.png" alt="">
+                        </a>
+                    </li>
+                    <li class="plan_slider_item plan_slider_04">
+                        <img class="plan_slider_image" src="./images/plan/slider--enterprise.png" alt="">
+                        <a href="https://discove.brushup.net/feedbacks">
+                            <img class="plan_btn btn_query cta" src="./images/plan/btn_query.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <p class="plan_slider_notion">
+                    ※
+                    表示価格はすべて税抜き価格です。また、オプションに関しては別途料金が発生致します。詳細はお問い合わせください。※Box連携に関しては別途料金が発生致します。詳細はお問い合わせください。※エントリープランの場合、1ファイルのアップロード可能データ容量は100MBまでとなります。※1
+                    スタンダードプラン、エンタープライズプランでは ストレージ容量追加オプションを100GBあたり5,500円（税込 /
+                    月）で提供しております。※2お客さまの業務フローに基づいた運用のご提案、初期設定、社内説明会など。※3 使い方、ご要望などの質疑応答をメールやチャットサービスで承ります。
+                </p>
+            </div>
+            <div class="plan_download">
+                <h3 class="plan_download_title">
+                    <img class="margin-x-auto" src="./images/plan/plan_download_title.png" alt="">
+                    <img class="margin-x-auto plan_arrow" src="./images/plan/plan_arrow.png" alt="">
+                </h3>
+                <ul class="plan_download_list">
+                    <li class="plan_download_item download_item01">
+                        <img class="margin-x-auto" src="./images/plan/area_trial.png" alt="">
+                        <a class="download_btn_link" href="https://register.brushup.net/userbases/interim_signup">
+                            <img class="download_btn cta" src="./images/plan/btn_trial.png" alt="">
+                        </a>
+                    </li>
+                    <li class="plan_download_item download_item01">
+                        <img class="margin-x-auto" src="./images/plan/area_reference.png" alt="">
+                        <a class="download_btn_link" href="http://www.brushup.net/documents/">
+                            <img class="download_btn cta" src="./images/plan/btn_reference.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

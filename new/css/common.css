@@ -1,0 +1,48 @@
+html {
+    font-size: 62.5%;
+}
+
+.pc {
+    display: block;
+}
+.sp {
+    display: none;
+}
+
+@media screen and (max-width: 750px) {
+    html {
+        font-size: 1.33vw;
+    }
+    .pc {
+        display: none;
+    }
+    .sp {
+        display: block;
+    }
+}
+
+body {
+    /* background-color: #000; */
+    transition: all 0.7s;
+    margin-bottom: 10rem;/* TO DO : delete */
+}
+
+.main {}
+
+.container {
+    max-width: 1080px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* 
+// section
+*/
+
+.section__title {
+    font-size: 5rem;
+    text-align: center;
+}

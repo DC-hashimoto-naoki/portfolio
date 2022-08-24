@@ -1,0 +1,174 @@
+/* 
+// FV (like JSON)
+*/
+
+.fv {
+    margin: 3rem auto;
+    transform: translateY(100%) scale(0.1);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.fv.show {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+}
+
+.textTyping {
+    white-space: pre-line;
+    font-size: 3rem;
+    color: #fff;
+    background-color: #1e1e1e;
+    font-family: monospace;
+    padding: 3rem 0;
+    border: 1px solid #aaa;
+}
+
+.textTyping>span {
+    display: none;
+}
+
+.textTyping>span.show {
+    display: inline;
+}
+
+.textTyping>span:nth-last-child(2)::after {
+    content: '_';
+    display: inline;
+    animation: flashing 1s steps(2, jump-none) infinite;
+}
+
+@keyframes flashing {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.terminalWindow {
+    background-color: #aaa;
+    font-size: 3rem;
+    padding-top: 1rem;
+}
+
+.terminalWindow__tab {
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 1rem 1rem 0 0;
+    margin-left: 2rem;
+    padding: 0 1rem;
+}
+
+/* 
+// works section
+*/
+
+.works__id-pass {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.works__id-pass > strong {
+    font-weight: bold;
+    color: red;
+}
+
+.works__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.works__list__item {
+    width: 30%;
+    max-height: 80vh;
+    overflow: hidden;
+    transition: 0.7s ease-in-out;
+    position: relative;
+    box-shadow: 0rem 0rem 1rem #aaa;
+    margin-bottom: 5rem;
+}
+
+.works__list__item:hover {
+    border: 0px solid #000;
+    box-shadow: 0rem 0rem 2rem #aaa;
+}
+
+.works__list__item:hover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100, 100, 100, 0.3);
+    z-index: 100;
+}
+
+
+.works__list__item  img {
+    max-width: 100%;
+    object-fit: cover;
+    transition: 0.7s;
+    position: relative;
+    top: 0;
+}
+
+.works__list__item:hover  img {
+    top: -100%;
+}
+
+.works__description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    width: 90%;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 0 0.5rem #1e1e1e;
+    z-index: 200;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.works__list__item:hover .works__description {
+    opacity: 1;
+}
+
+/* 
+// skills section
+*/
+
+.skills__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills__list__item {
+    box-shadow: 0 0 1rem #ddd;
+    width: 30%;
+    border-radius: 2rem;
+    margin-bottom: 5rem;
+}
+
+.skills__list__item > img {
+    display: block;
+    margin: auto;
+}
+
+.skills__stars,
+.skills__years {
+    text-align: center;
+}
+
+.skills__stars {
+    font-size: 3rem;
+}
+
+.skills__years {
+    font-size: 2rem;
+}
