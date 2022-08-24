@@ -81,8 +81,13 @@
     flex-wrap: wrap;
 }
 
-.works__list__item {
+.works__list__item--link {
     width: 30%;
+    display: block;
+}
+
+.works__list__item {
+    width: 100%;
     max-height: 80vh;
     overflow: hidden;
     transition: 0.7s ease-in-out;
@@ -107,16 +112,15 @@
 }
 
 
-.works__list__item  img {
+.works__list__item > img {
     max-width: 100%;
     object-fit: cover;
     transition: 0.7s;
     position: relative;
-    top: 0;
 }
 
-.works__list__item:hover  img {
-    top: -100%;
+.works__list__item:hover > img {
+    transform: translateY(-100rem);
 }
 
 .works__description {
@@ -171,4 +175,50 @@
 
 .skills__years {
     font-size: 2rem;
+}
+
+/* 
+// career section
+*/
+
+.career__contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.career__years {
+    width: 33%;
+}
+
+.career__years__item {
+    font-size: 3rem;
+    position: relative;
+    position: sticky;
+    top: 0rem;
+    left: 5rem;
+}
+
+.career__description {
+    border-left: 3px solid #000;
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+.career__description::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #aaa;
+    position: absolute;
+    left: -1.15rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.career__texts {
+    font-size: 2rem;
+    padding-left: 5rem;
 }
