@@ -42,6 +42,10 @@ img {
 // section
 */
 
+section {
+    margin-top: 5rem;
+}
+
 .section__title {
     font-size: 5rem;
     text-align: center;
