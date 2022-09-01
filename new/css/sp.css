@@ -1,0 +1,64 @@
+@media screen and (max-width: 750px) {
+    /* 
+    // works
+    */
+    .works__list {
+        flex-direction: column;
+    }
+
+    .works__list__item--link {
+        width: 90%;
+        margin: auto;
+    }
+
+    .works__description {
+        width: fit-content;
+    }
+
+    /* 
+    // apps
+    */
+
+    .app__list {
+        flex-direction: column;
+    }
+
+    .app__list__item {
+        width: 90%;
+        margin: auto;
+    }
+
+    /* 
+    // skills
+    */
+
+    .skills__list {
+        justify-content: space-around;
+    }
+
+    .skills__list__item {
+        width: 45%;
+    }
+
+    /* 
+    // career
+    */
+
+    .career__picture > img {
+        max-width: fit-content;
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .career__description {
+        width: 75%;
+    }
+
+    .career__description--inner::before {
+        left: -1%;
+    }
+
+    .career__description::before {
+        left: -1.30rem;
+    }
+}

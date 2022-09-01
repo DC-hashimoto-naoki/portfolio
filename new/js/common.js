@@ -48,9 +48,15 @@ window.addEventListener('DOMContentLoaded', () => {
         fv.remove();
     }
 
+    function showMainContents(){
+        const mainContent = document.getElementById('main_content');
+        mainContent.classList.add('show');
+    }
+
     function pressEnter(e) {
         if (e.keyCode === 13 && hasTextShowed) {
             changeBackground("#fff");
+            showMainContents();
         } else {
             return false;
         }
@@ -58,6 +64,7 @@ window.addEventListener('DOMContentLoaded', () => {
     function clickText() {
         if(hasTextShowed){
             changeBackground("#fff");
+            showMainContents();
         } else {
             return false;
         }

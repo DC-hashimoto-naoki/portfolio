@@ -20,7 +20,7 @@
     color: #fff;
     background-color: #1e1e1e;
     font-family: monospace;
-    padding: 3rem 0;
+    padding: 3rem;
     border: 1px solid #aaa;
 }
 
@@ -90,6 +90,7 @@
 .works__id-pass > strong {
     font-weight: bold;
     color: red;
+    font-size: 1.25em;
 }
 
 .works__container {
@@ -135,6 +136,7 @@
 
 .works__list__item > img {
     max-width: 100%;
+    width: 100%;
     object-fit: cover;
     transition: 0.7s;
     position: relative;
@@ -164,13 +166,40 @@
 }
 
 /* 
+// apps section
+*/
+
+.app__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app__list__item {
+    width: 30%;
+}
+
+.app__list__item_title {
+    font-size: 3.6rem;
+    text-align: center;
+}
+
+.app__list__item_image {
+    display: block;
+    margin: auto;
+}
+
+.app__list__item_description {
+    font-size: 2rem;
+}
+
+/* 
 // skills section
 */
 
 .skills__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 3%;
 }
 
 .skills__list__item {
@@ -183,10 +212,12 @@
 .skills__list__item > img {
     display: block;
     margin: auto;
+    height: 50%;
 }
 
 .skills__stars,
-.skills__years {
+.skills__years,
+.skill__name {
     text-align: center;
 }
 
@@ -194,6 +225,7 @@
     font-size: 3rem;
 }
 
+.skill__name ,
 .skills__years {
     font-size: 2rem;
 }
@@ -222,7 +254,7 @@
 
 .career__description {
     border-left: 3px solid #000;
-    padding-bottom: 3rem;
+    padding: 3rem 0;
     padding-left: 5rem;
     position: relative;
     width: 70%;
@@ -243,11 +275,30 @@
     transform: translateY(-50%);
 }
 
+.career__description--inner {
+    display: flex;
+    align-items: center;
+    border: 0.5rem solid #000;
+    border-radius: 2.5rem;
+    position: relative;
+    padding: 2rem;
+}
+
+.career__description--inner::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    border: 2rem solid transparent;
+    border-right: 2rem solid #000;
+    transform: translate(-100%, -50%);
+}
+
 .career__picture > img {
     object-fit: cover;
-    width: 100%;
     width: 20rem;
     height: 20rem;
+    border: 1px solid #000;
     border-radius: 50%;
 }
 
@@ -262,4 +313,10 @@
 
 .sns_icons_list {
     display: flex;
+    justify-content: center;
+}
+
+.sns_icon {
+    max-width: 100px;
+    margin: 0 5rem;
 }

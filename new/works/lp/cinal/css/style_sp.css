@@ -1,0 +1,286 @@
+@media screen and (max-width:749px) {
+    html {
+        font-size: 1.33vw;
+        /* 10px / 750px = 1.33% */
+    }
+}
+
+@media screen and (max-width: 1280px) {
+
+    .pc {
+        display: none;
+    }
+
+    .sp {
+        display: block;
+    }
+
+    body {
+        color: #000;
+        font-family: 'Noto Sans JP', sans-serif;
+        margin: auto;
+        max-width: 750px;
+        min-width: 375px;
+        font-feature-settings: 'palt';
+        font-size: 1.6rem;
+        /* 16pxに戻している */
+        letter-spacing: 0.15em;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-text-size-adjust: 100%;
+    }
+
+
+    /* cta_sample */
+
+    .cta_sample {
+        margin-top: 10rem;
+    }
+
+    .sample_text,
+    .sample_cta,
+    .sample_image {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .sample_text {
+        width: 60.6rem;
+    }
+
+    .sample_image {
+        width: 59.4rem;
+        margin-top: 4.5rem;
+        margin-bottom: 4.5rem;
+    }
+
+    .sample_cta {
+        width: 59rem;
+    }
+
+    /* cta_honpin */
+    .cta_honpin {
+        margin-top: 8rem;
+        margin-bottom: 12rem;
+    }
+
+    .honpin_image,
+    .honpin_cta {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .honpin_image {
+        width: 67rem;
+    }
+
+    .honpin_cta {
+        margin-top: 4rem;
+        width: 59rem;
+    }
+
+    /* intro */
+    .intro_title {
+        width: 51.4rem;
+        margin: 17rem auto 14rem;
+    }
+
+    .intro_content {
+        background-color: #f5f5f5;
+        margin: 0 4rem;
+        padding: 8rem 4rem;
+    }
+
+    .arrow_down {
+        width: 67rem;
+        margin: auto;
+    }
+
+    .content_02 {
+        position: relative;
+    }
+
+    .youtube {
+        width: 51rem;
+        height: 28.6875rem;
+        position: absolute;
+        top: 17rem;
+        left: 4rem;
+    }
+
+    .intro_content_title,
+    .intro_content_03_title,
+    .intro_content_04_title {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .intro_content_title {
+        width: 46rem;
+        margin-bottom: 6rem;
+    }
+
+    .intro_content_03_title {
+        width: 36.5rem;
+        margin-top: 7.5rem;
+        margin-bottom: 7.5rem;
+    }
+
+    .intro_content_04_title {
+        width: 28.2rem;
+        margin-top: 7.5rem;
+        margin-bottom: 7.5rem;
+    }
+
+    .intro_content_01 {
+        margin-bottom: 4rem;
+    }
+
+    /* how_to_use */
+    .history_text {
+        width: 63rem;
+        margin: 10.5rem auto 6rem;
+    }
+
+    /* sns */
+    .sns {
+        margin-top: 12.5rem;
+    }
+
+    .sns_title,
+    .sns_line,
+    .sns_insta,
+    .sns_insta_text,
+    .sns_notion {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sns_title {
+        width: 50rem;
+        margin-bottom: 9rem;
+    }
+
+    .sns_line,
+    .sns_insta {
+        width: 54rem;
+    }
+
+    .sns_insta_text {
+        width: 24.2rem;
+        margin-top: 6rem;
+        margin-bottom: 3rem;
+    }
+
+    .sns_notion {
+        width: 66.2rem;
+        margin-top: 14rem;
+        margin-bottom: 4rem;
+    }
+
+    /* QandA */
+    .QandA {
+        background: linear-gradient(-45deg, #fbfbfb, #f0f0f0);
+        padding: 9rem 6rem 12rem;
+    }
+
+    .QandA_title {
+        width: 21.8rem;
+        margin: 0 auto 7rem;
+    }
+
+    .question {
+        font-family: 'こぶりなゴシック Std', 'Noto Sans JP', sans-serif;
+        font-size: 2.8rem;
+    }
+
+    .list_item {
+        border-bottom: 0.05rem solid #666666;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .list_item:first-child {
+        border-top: 0.05rem solid #666666;
+
+    }
+
+    .question {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .question::after {
+        content: "";
+        display: block;
+        width: 3rem;
+        height: 3rem;
+        background-image: url(../images/sp/puls.png);
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .question.close::after {
+        background-image: url(../images/sp/puls.png);
+    }
+
+    .question.open::after {
+        background-image: url(../images/sp/minus.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .q1 {
+        width: 42.4rem;
+    }
+
+    .q2 {
+        width: 43.5rem;
+    }
+
+    .q3 {
+        width: 51.9rem;
+    }
+
+    .q4 {
+        width: 39rem;
+    }
+
+    .q5 {
+        width: 49.9rem;
+    }
+
+    .answer {
+        width: 55.5rem;
+        margin-top: 4rem;
+        display: none;
+    }
+
+    .answer.show {
+        display: block;
+    }
+
+    /* footer */
+    .footer {
+        background: linear-gradient(-45deg, #fbfbfb, #f0f0f0);
+        padding: 11rem 10rem 10rem;
+    }
+
+    .footer_logo {
+        width: 30rem;
+        margin: auto;
+    }
+
+    .footer_links {
+        font-family: 'こぶりなゴシック Std', 'Noto Sans JP', sans-serif;
+        font-size: 2.6rem;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4rem;
+    }
+
+    .footer_links>a {
+        color: #505050;
+    }
+
+}

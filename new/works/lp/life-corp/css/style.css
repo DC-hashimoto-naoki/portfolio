@@ -1,0 +1,83 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap&subset=japanese);
+
+html {
+  font-size: 62.5%; /* 16px(default) * 62.5% = 10px */
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width:749px) {
+  html {
+      font-size: 1.33vw; /* 10px / 750px = 1.33% */
+  }
+}
+
+body{
+  color:#000;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin:auto;
+  max-width:750px;
+  min-width: 375px;
+  font-feature-settings: 'palt';
+  font-size: 1.6rem;
+  letter-spacing: 0.15em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Edge(EdgeHTML) */
+_:-ms-lang(x)::backdrop,
+body {
+    transform: rotate(0.03deg);
+    /* google-font for edge */
+}
+
+/* Edge(Chromium) */
+_:lang(x)::-ms-,
+body {
+    transform: rotate(0.03deg);
+    /* google-font for edge */
+}
+
+img{
+  max-width:100%;
+  display: block;
+}
+
+/* custome css */
+
+/* introduction */
+.introduction__text > img {
+    margin: 4rem auto;
+    width: 66.8rem;
+}
+
+.goods__item {
+    margin-bottom: 1rem;
+}
+
+/* app */
+.apps {
+    width: 87.5%;
+    margin: 4rem auto;
+}
+
+.app_text {
+    margin-bottom: 3rem;
+}
+
+.apps_items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apps_items > li {
+    width: 31.5rem;
+}
+
+/* footer */
+
+.footer {
+    margin-bottom: 3rem;
+}

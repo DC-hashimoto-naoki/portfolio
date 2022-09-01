@@ -1,0 +1,222 @@
+@media screen and (min-width:1280px) {
+    .pc {
+        display: block;
+    }
+
+    .sp {
+        display: none;
+    }
+
+    .wrapper-pc {
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fit-content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: fit-content;
+    }
+
+    .fv_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .law {
+        font-size: 20px;
+    }
+
+    .fv__wrapper {
+        background-image: url(../images/pc/fv_bg.png);
+        background-size: 1760px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding-bottom: 30px;
+    }
+
+    .fv_bottom {
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    .cta {
+        position: relative;
+    }
+
+    .cta_btn {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 509px;
+    }
+
+    .nayami {
+        margin-top: 80px;
+    }
+
+    .solution {
+        margin-top: 50px;
+    }
+
+    .apeal_top__wrapper {
+        background-image: url(../images/pc/apeal_top_bg.png);
+        background-size: 1760px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .apeal_content__wrapper {
+        margin-top: 80px;
+    }
+
+    .ingredient {
+        margin-top: 80px;
+    }
+
+    .special-price {
+        position: relative;
+        margin-top: 80px;
+    }
+
+    .otameshi__wrapper {
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    .nayami__wrapper {
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    }
+
+
+
+    .cta_btn-special {
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 509px;
+    }
+
+    .conclution__wrapper {
+        position: relative;
+    }
+
+    .cta_btn-conclution {
+        position: absolute;
+        bottom: -70px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .end_message__wrapper {
+        margin-top: 150px;
+    }
+
+    .delivery__wrapper {
+        background-color: #ececec;
+        padding: 75px 0;
+    }
+
+    .notion_top {
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+
+    .graph {
+        margin-bottom: 85px;
+    }
+
+    .QandA {
+        background-color: #008077;
+        padding: 75px 250px;
+        width: 1280px;
+        margin: auto;
+    }
+
+    .list_item {
+        background-color: #fff;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        padding: 30px 20px 30px 10px;
+    }
+
+    .question {
+        font-size: 28px;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .question_title {
+        width: 272px;
+        margin: 0 auto 40px;
+    }
+
+    .question.show::after {
+        content: '';
+        display: block;
+        height: 6px;
+        width: 35px;
+        background-image: url(../images/sp/minus.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .question::after {
+        content: '';
+        display: block;
+        height: 35px;
+        width: 35px;
+        background-image: url(../images/sp/plus.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .question_content {
+        display: flex;
+        align-items: center;
+    }
+
+    .question_icon {
+        display: inline-block;
+        padding-right: 25px;
+        box-sizing: content-box;
+    }
+
+    .answer {
+        font-size: 28px;
+        font-weight: 500;
+        padding: 1em 1em 0;
+        letter-spacing: normal;
+    }
+
+    .footer_links {
+        margin-top: 120px;
+        border-top: 1px solid #000;
+        padding: 50px 0;
+    }
+
+    .link_list {
+        display: flex;
+        gap: 1.2em;
+    }
+
+    .link_item > a {
+        font-weight: bold;
+        color: #0081cc;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .notion {
+        font-size: 21px;
+        margin: 0 auto;
+        max-width: 1280px;
+    }
+}

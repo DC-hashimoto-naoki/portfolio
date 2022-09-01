@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sp.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/chart.js"></script>
     <!-- <script src="js/common.js"></script> -->
@@ -24,160 +25,311 @@
                 <pre class="textTyping">
                     {"name" : "hashimoto naoki",
                      "gender" : "male",
-                    "age" : 30,
-                    "job" : "front-end engineer"
-                    "programing-language" : {
+                     "age" : 30,
+                     "job" : "front-end engineer"
+                     "programing-language" : {
                         front-end : ["html/css", "javascript"],
                         back-end : ["php", "mysql"],
                     },
-                    "isGlasses" : true,
-                    "hasPassion" : true,
-                    "favorite word" : "connecting dots"
+                     "isGlasses" : true,
+                     "hasPassion" : true,
+                     "favorite word" : "connecting dots"
                     }
                     PLEASE PRESS ENTER KEY OR CLICK
                 </pre>
+                <div class="fv_bg"></div>
             </section>
 
-            <section class="top-image">
-                <h1 class="main-title">Hashimoto Naoki portfolio</h1>
-                <h2 class="sub-title">Web Engineer</h2>
-            </section>
+            <div class="main_content" id="main_content">
 
-            <section class="works">
-                <h2 class="section__title">WORKS</h2>
-                <p class="works__id-pass">
-                    ベーシック認証のIDとpasswordは、「<strong>code</strong>」です。
-                </p>
-                <div class="works__container">
-                    <ul class="works__list">
-                        <a class="works__list__item--link" href="">
-                            <li class="works__list__item">
-                                <img src="./works/lp/brushup/Brushup_LP_design.jpg" alt="brushup">
-                                <div class="works__description">
-                                    【通常LP】Brush株式会社<br>
-                                    制作期間：５日間<br>
-                                    制作予算：80万円
-                                </div>
-                            </li>
-                        </a>
-                        <a class="works__list__item--link" href="">
-                            <li class="works__list__item">
-                                <img src="./works/lp/mellia/meria_hq_lp.jpg" alt="mellia">
-                                <div class="works__description">
-                                    【商品紹介LP】<br>
-                                    クライアント：メリア株式会社<br>
-                                    制作期間：５日間<br>
-                                    制作予算：80万円
-                                </div>
-                            </li>
-                        </a>
-                        <a class="works__list__item--link" href="">
-                            <li class="works__list__item">
-                                <img src="./works/lp/mellia/meria_hq_lp.jpg" alt="mellia">
-                            </li>
-                        </a>
-                        <a class="works__list__item--link" href="">
-                            <li class="works__list__item">
-                                <img src="./works/lp/brushup/Brushup_LP_design.jpg" alt="brushup">
-                                <div class="works__description">
-                                    【通常LP】Brush株式会社<br>
-                                    制作期間：５日間<br>
-                                    制作予算：80万円
-                                </div>
-                            </li>
-                        </a>
+                <section class="top-image">
+                    <h1 class="main-title">Hashimoto Naoki portfolio</h1>
+                    <h2 class="sub-title">Web Engineer</h2>
+                </section>
+
+                <section class="works">
+                    <h2 class="section__title">WORKS</h2>
+                    <p class="works__id-pass">
+                        ベーシック認証のIDとpasswordは、「<strong>code</strong>」です。
+                    </p>
+                    <div class="works__container">
+                        <ul class="works__list">
+                            <a class="works__list__item--link" href="./works/lp/brushup/index.html">
+                                <li class="works__list__item">
+                                    <img src="./images/works/Brushup_LP_design.jpg" alt="brushup">
+                                    <div class="works__description">
+                                        【BtoB向けLP】<br>
+                                        Brush株式会社<br>
+                                        制作期間：５日間<br>
+                                        制作予算：80万円
+                                    </div>
+                                </li>
+                            </a>
+                            <a class="works__list__item--link" href="./works/lp/mellia/index.html">
+                                <li class="works__list__item">
+                                    <img src="./images/works/meria_hq_lp.jpg" alt="mellia">
+                                    <div class="works__description">
+                                        【商品紹介LP】<br>
+                                        クライアント：メリア株式会社<br>
+                                        制作期間：５日間<br>
+                                        制作予算：80万円
+                                    </div>
+                                </li>
+                            </a>
+                            <a class="works__list__item--link" href="./works/lp/nahls/index.html">
+                                <li class="works__list__item">
+                                    <img src="./images/works/nahlsrich.png" alt="nahlsrich">
+                                    <div class="works__description">
+                                        【商品紹介LP】<br>
+                                        商品名：ナールスリッチ<br>
+                                        制作期間：３日間<br>
+                                        制作予算：100万円
+                                    </div>
+                                </li>
+                            </a>
+                            <a class="works__list__item--link" href="./works/lp/cloudthomas/index.html">
+                                <li class="works__list__item">
+                                    <img src="./images/works/cloudthomas_lp.jpg" alt="cloudthomas">
+                                    <div class="works__description">
+                                        【BtoB向けLP】<br>
+                                        関通株式会社<br>
+                                        制作期間：４日間<br>
+                                        制作予算：75万円
+                                    </div>
+                                </li>
+                            </a>
+                            <a class="works__list__item--link" href="./works/lp/cinal/index.html">
+                                <li class="works__list__item">
+                                    <img src="./images/works/cinalexia_lp_sp.jpg" alt="cinalexia_lp">
+                                    <div class="works__description">
+                                        【商品紹介LP】<br>
+                                        塩野義製薬<br>
+                                        制作期間：5日間<br>
+                                        制作予算：120万円
+                                    </div>
+                                </li>
+                            </a>
+                            <a class="works__list__item--link" href="./works/lp/life-corp/index.html">
+                                <li class="works__list__item">
+                                    <img src="./images/works/life-corp_lp.jpg" alt="life-corp">
+                                    <div class="works__description">
+                                        【キャンペーンLP】<br>
+                                        ライフコーポレーション<br>
+                                        制作期間：4日間<br>
+                                        制作予算：80万円
+                                    </div>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="apps">
+                    <h2 class="section__title">APPs</h2>
+                    <ul class="app__list">
+                        <li class="app__list__item">
+                            <h3 class="app__list__item_title">Appタイトル</h3>
+                            <img class="app__list__item_image" src="./skills/icons/react.png" alt="">
+                            <p class="app__list__item_description">
+                                説明文。<br>
+                                テキスト、テキスト、テキスト、テキスト
+                                テキスト、テキスト、テキスト、テキスト
+                            </p>
+                        </li>
+                        <li class="app__list__item">
+                            <h3 class="app__list__item_title">Appタイトル</h3>
+                            <img class="app__list__item_image" src="./skills/icons/react.png" alt="">
+                            <p class="app__list__item_description">
+                                説明文。<br>
+                                テキスト、テキスト、テキスト、テキスト
+                                テキスト、テキスト、テキスト、テキスト
+                            </p>
+                        </li>
+                        <li class="app__list__item">
+                            <h3 class="app__list__item_title">Appタイトル</h3>
+                            <img class="app__list__item_image" src="./skills/icons/react.png" alt="">
+                            <p class="app__list__item_description">
+                                説明文。<br>
+                                テキスト、テキスト、テキスト、テキスト
+                                テキスト、テキスト、テキスト、テキスト
+                            </p>
+                        </li>
                     </ul>
-                </div>
-            </section>
+                </section>
 
-            <section class="chart">
-                <div>
-                    <!-- <canvas id="myChart"></canvas> -->
-                </div>
-            </section>
-
-            <section class="skills">
-                <h2 class="section__title">SKILLS</h2>
-                <ul class="skills__list">
-                    <li class="skills__list__item">
-                        <img src="./skills/icons/javascript.png" alt="">
-                        <p class="skills__stars">☆☆☆☆☆</p>
-                        <p class="skills__years">実務経験: 2年</p>
-                    </li>
-                    <li class="skills__list__item">
-                        <img src="./skills/icons/javascript.png" alt="">
-                        <p class="skills__stars">☆☆☆☆☆</p>
-                        <p class="skills__years">実務経験: 2年</p>
-                    </li>
-                    <li class="skills__list__item">
-                        <img src="./skills/icons/react.png" alt="">
-                        <p class="skills__stars">☆☆☆☆☆</p>
-                        <p class="skills__years">自己開発: 1年</p>
-                    </li>
-                    <li class="skills__list__item">
-                        <img src="./skills/icons/react.png" alt="">
-                        <p class="skills__stars">☆☆☆☆☆</p>
-                        <p class="skills__years">自己開発: 1年</p>
-                    </li>
-                </ul>
-            </section>
-
-            <section class="career">
-                <h2 class="section__title">CAREER</h2>
-                <div class="career__contents">
-                    <div class="career__years">
-                        <div class="career__years__item">2022</div>
+                <section class="chart">
+                    <div>
+                        <canvas id="myChart"></canvas>
                     </div>
-                    <div class="career__description">
-                        <div class="career__picture">
-                            <img src="./images/pictures/engineer.jpg" alt="">
+                </section>
+
+                <section class="skills">
+                    <h2 class="section__title">SKILLS</h2>
+                    <ul class="skills__list">
+                        <li class="skills__list__item">
+                            <img src="./skills/icons/javascript.png" alt="">
+                            <p class="skill__name">JavaScript</p>
+                            <p class="skills__stars">☆☆☆☆☆</p>
+                            <p class="skills__years">実務経験: 2年</p>
+                        </li>
+                        <li class="skills__list__item">
+                            <img src="./skills/icons/html.png" alt="">
+                            <p class="skill__name">HTML</p>
+                            <p class="skills__stars">☆☆☆☆☆</p>
+                            <p class="skills__years">実務経験: 2年</p>
+                        </li>
+                        <li class="skills__list__item">
+                            <img src="./skills/icons/css3.png" alt="">
+                            <p class="skill__name">CSS</p>
+                            <p class="skills__stars">☆☆☆☆☆</p>
+                            <p class="skills__years">自己開発: 1年</p>
+                        </li>
+                        <li class="skills__list__item">
+                            <img src="./skills/icons/react.png" alt="">
+                            <p class="skill__name">React</p>
+                            <p class="skills__stars">☆☆☆☆☆</p>
+                            <p class="skills__years">自己開発: 1年</p>
+                        </li>
+                        <li class="skills__list__item">
+                            <img src="./skills/icons/vue-js.png" alt="">
+                            <p class="skill__name">Vue.js</p>
+                            <p class="skills__stars">☆☆☆☆☆</p>
+                            <p class="skills__years">自己開発: 1年</p>
+                        </li>
+                        <li class="skills__list__item">
+                            <img src="./skills/icons/php.png" alt="">
+                            <p class="skill__name">PHP</p>
+                            <p class="skills__stars">☆☆☆☆☆</p>
+                            <p class="skills__years">自己開発: 1年</p>
+                        </li>
+                        <li class="skills__list__item">
+                            <img src="./skills/icons/mysql.png" alt="">
+                            <p class="skill__name">MySQL</p>
+                            <p class="skills__stars">☆☆☆☆☆</p>
+                            <p class="skills__years">自己開発: 1年</p>
+                        </li>
+                        <li class="skills__list__item">
+                            <img src="./skills/icons/photoshop.png" alt="">
+                            <p class="skill__name">Photoshop</p>
+                            <p class="skills__stars">☆☆☆☆☆</p>
+                            <p class="skills__years">自己開発: 1年</p>
+                        </li>
+                        <li class="skills__list__item">
+                            <img src="./skills/icons/illustrator.png" alt="">
+                            <p class="skill__name">Illustrator</p>
+                            <p class="skills__stars">☆☆☆☆☆</p>
+                            <p class="skills__years">自己開発: 1年</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="career">
+                    <h2 class="section__title">CAREER</h2>
+                    <div class="career__contents">
+                        <div class="career__years">
+                            <div class="career__years__item">1992</div>
                         </div>
-                        <p class="career__texts">
-                            テキスト、テキスト、テキスト、テキスト<br>
-                            テキスト、テキスト、テキスト、テキスト<br>
-                            テキスト、テキスト、テキスト、テキスト<br>
-                            テキスト、テキスト、テキスト、テキスト<br>
-                            テキスト、テキスト、テキスト、テキスト
-                        </p>
-                    </div>
-                </div>
-                <div class="career__contents">
-                    <div class="career__years">
-                        <div class="career__years__item">20XX</div>
-                    </div>
-                    <div class="career__description">
-                        <div class="career__picture">
-                            <img src="./images/pictures/engineer.jpg" alt="">
+                        <div class="career__description">
+                            <div class="career__description--inner">
+                                <div class="career__picture">
+                                    <img src="./images/pictures/sports_baseball_man_asia.png" alt="">
+                                </div>
+                                <p class="career__texts">
+                                    大阪で生まれる。<br>
+                                    小さい頃の夢は、プロ野球選手<br>
+                                    日が暮れるまで兄とキャッチボールをしていた
+                                </p>
+                            </div>
                         </div>
-                        <p class="career__texts">
-                            テキスト、テキスト、テキスト、テキスト<br>
-                            テキスト、テキスト、テキスト、テキスト<br>
-                            テキスト、テキスト、テキスト、テキスト<br>
-                            テキスト、テキスト、テキスト、テキスト<br>
-                            テキスト、テキスト、テキスト、テキスト<br>
-                            テキスト、テキスト、テキスト、テキスト<br>
-                            テキスト、テキスト、テキスト、テキスト
-                        </p>
                     </div>
-                </div>
-            </section>
+                    <div class="career__contents">
+                        <div class="career__years">
+                            <div class="career__years__item">2008</div>
+                        </div>
+                        <div class="career__description">
+                            <div class="career__description--inner">
+                                <div class="career__picture">
+                                    <img src="./images/pictures/suugakusya.png" alt="">
+                                </div>
+                                <p class="career__texts">
+                                    高校時代<br>
+                                    パソコンを触ることが好きだった<br>
+                                    得意教科：世界史<br>
+                                    苦手教科：数学<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="career__contents">
+                        <div class="career__years">
+                            <div class="career__years__item">2011</div>
+                        </div>
+                        <div class="career__description">
+                            <div class="career__description--inner">
+                                <div class="career__picture">
+                                    <img src="./images/pictures/usingcomputer_man_color.png" alt="">
+                                </div>
+                                <p class="career__texts">
+                                    大学生<br>
+                                    独学でHTMLを勉強し始める。<br>
+                                    HPなどを自作した
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="career__contents">
+                        <div class="career__years">
+                            <div class="career__years__item">2017</div>
+                        </div>
+                        <div class="career__description">
+                            <div class="career__description--inner">
+                                <div class="career__picture">
+                                    <img src="./images/pictures/juku_koushi.png" alt="">
+                                </div>
+                                <p class="career__texts">
+                                    塾講師<br>
+                                    受験生を担当<br>
+                                    数学の面白さに気づく
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="career__contents">
+                        <div class="career__years">
+                            <div class="career__years__item">2022</div>
+                        </div>
+                        <div class="career__description">
+                            <div class="career__description--inner">
+                                <div class="career__picture">
+                                    <img src="./images/pictures/engineer.jpg" alt="">
+                                </div>
+                                <p class="career__texts">
+                                    大阪市内のWeb広告会社でコーダーとなる<br>
+                                    Reactを中心にフロントエンドを開発中
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-            <section class="sns">
-                <h2 class="section__title">SNS</h2>
-                <ul class="sns_icons_list">
-                    <li class="sns_icon">
-                        <a href="">
-                            <img src="./images/icons/github.png" alt="github">
-                        </a>
-                    </li>
-                    <li class="sns_icon">
-                        <a href="">
-                            <img src="./images/icons/twitter.png" alt="github">
-                        </a>
-                    </li>
-                </ul>
-            </section>
-        </div>
+                <section class="sns">
+                    <h2 class="section__title">SNS</h2>
+                    <ul class="sns_icons_list">
+                        <li class="sns_icon">
+                            <a href="">
+                                <img src="./images/icons/github.png" alt="github">
+                            </a>
+                        </li>
+                        <li class="sns_icon">
+                            <a href="">
+                                <img src="./images/icons/twitter.png" alt="github">
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+            </div><!-- /.main_content -->
+        </div><!-- /.container -->
     </main>
     <!-- TODO: delete -->
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

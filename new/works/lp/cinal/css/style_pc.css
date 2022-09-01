@@ -1,0 +1,234 @@
+@media screen and (min-width: 1280px) {
+    .pc {
+        display: block;
+    }
+
+    .sp {
+        display: none;
+    }
+
+    .wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1280px;
+        display: block;
+    }
+
+    .fit-content {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header {
+        padding: 20px 25px;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .fv_bg {
+        background-image: url(../images/pc/fv_bg.png);
+        height: 891px;
+        background-size: 3000px;
+        background-position-x: center;
+        background-repeat: no-repeat;
+    }
+
+    .cta_sample {
+        margin-top: 100px;
+        margin-bottom: 80px;
+
+    }
+
+    .sample_cta {
+        margin-top: 40px;
+    }
+
+    .cta_honpin {
+        margin-bottom: 145px;
+    }
+
+    .honpin_cta {
+        margin-top: 50px;
+    }
+
+    .intro_top {
+        background-image: url(../images/pc/intro_bg.png);
+        background-size: 3000px;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        padding-top: 120px;
+        padding-bottom: 130px;
+    }
+
+    .intro_title__wrapper {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .intro_content {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #f3f3f3;
+        padding-bottom: 80px;
+    }
+
+    .intro_content_title__wrapper {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .content_02 {
+        margin-top: 40px;
+        position: relative;
+    }
+
+    .youtube {
+        position: absolute;
+        top: 120px;
+        left: 160px;
+    }
+
+    .intro_content_03_title__wrapper {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .intro_content_04_title__wrapper {
+        margin-top: 65px;
+        margin-bottom: 65px;
+    }
+
+    .how_to_use__area {
+        background-image: url(../images/pc/how_to_use.png);
+        background-size: 3000px;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        padding-top: 75px;
+        height: 480px;
+    }
+
+    .history {
+        margin-top: 90px;
+    }
+
+    .QandA {
+        background: linear-gradient(-67deg, #f9f9f9, #eeeeee);
+        padding-top: 100px;
+        padding-bottom: 120px;
+    }
+
+    .QandA__wrapper {
+        width: 760px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .QandA_title {
+        margin-bottom: 45px;
+    }
+
+    .list_item {
+        border-bottom: 0.5px solid #666666;
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .list_item:first-child {
+        border-top: 0.5px solid #666666;
+
+    }
+
+    .question {
+        display: flex;
+        justify-content: space-between;
+        user-select: none;
+    }
+
+    .answer {
+        margin-top: 40px;
+        display: none;
+
+    }
+
+    .answer.show {
+        display: block;
+    }
+
+    .question::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-image: url(../images/sp/puls.png);
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .question.close::after {
+        background-image: url(../images/sp/puls.png);
+    }
+
+    .question.open::after {
+        background-image: url(../images/sp/minus.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .sns {
+        margin-top: 85px;
+        margin-bottom: 30px;
+    }
+
+    .sns_title {
+        margin-bottom: 40px;
+    }
+
+    .line_and_insta {
+        width: 745px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 40px;
+    }
+
+    .sns_insta_text__wrapper {
+        margin-bottom: 10px;
+    }
+
+    .sns_notion__wrapper {
+        margin-top: 75px;
+        margin-bottom: 10px;
+    }
+
+    .footer {
+        background-image: url(../images/pc/footer_bg.png);
+        background-size: 3000;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    .footer__content {
+        width: 440px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer_links {
+        font-family: 'こぶりなゴシック Std', 'Noto Sans JP', sans-serif;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .footer_links a {
+        color: #505050;
+    }
+}

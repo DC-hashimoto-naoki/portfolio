@@ -1,17 +1,15 @@
 window.addEventListener('DOMContentLoaded', () => {
     const data = {
         labels: [
-            'Eating',
-            'Drinking',
-            'Sleeping',
-            'Designing',
-            'Coding',
-            'Cycling',
-            'Running'
+            'JavaScript',
+            'HTML/CSS',
+            'PHP',
+            'Photosho',
+            'Illustrator',
         ],
         datasets: [{
             label: 'My First Dataset',
-            data: [65, 59, 90, 81, 56, 55, 40],
+            data: [85, 80, 90, 81, 80],
             fill: true,
             backgroundColor: 'rgba(255, 99, 132, 0.2)',
             borderColor: 'rgb(255, 99, 132)',
@@ -19,29 +17,30 @@ window.addEventListener('DOMContentLoaded', () => {
             pointBorderColor: '#fff',
             pointHoverBackgroundColor: '#fff',
             pointHoverBorderColor: 'rgb(255, 99, 132)'
-        }, {
-            label: 'My Second Dataset',
-            data: [28, 48, 40, 19, 96, 27, 100],
-            fill: true,
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgb(54, 162, 235)',
-            pointBackgroundColor: 'rgb(54, 162, 235)',
-            pointBorderColor: '#fff',
-            pointHoverBackgroundColor: '#fff',
-            pointHoverBorderColor: 'rgb(54, 162, 235)'
         }]
+    };
+
+    const options = {
+        elements: {
+            line: {
+                borderWidth: 3
+            }
+        },
+        scales: {
+            r: {
+                angleLines: {
+                    display: true
+                },
+                suggestedMin: 0,
+                suggestedMax: 100
+            }
+        }
     };
 
     const config = {
         type: 'radar',
         data: data,
-        options: {
-            elements: {
-                line: {
-                    borderWidth: 3
-                }
-            }
-        },
+        options: options
     };
 
     const myChart = new Chart(

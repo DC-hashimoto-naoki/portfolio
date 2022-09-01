@@ -22,8 +22,8 @@ html {
 }
 
 body {
-    /* background-color: #000; */
     transition: all 0.7s;
+    /* background-color: #000; */
     margin-bottom: 10rem;/* TO DO : delete */
 }
 
@@ -32,6 +32,15 @@ body {
 .container {
     max-width: 1080px;
     margin: auto;
+}
+
+.main_content {
+    /* opacity: 0; */
+    transition: 0.7s;
+}
+
+.main_content.show {
+    opacity: 1;
 }
 
 img {
