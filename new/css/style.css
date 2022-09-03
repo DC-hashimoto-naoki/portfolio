@@ -209,6 +209,17 @@
     margin-bottom: 5rem;
 }
 
+.skills__list__item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.7s;
+}
+
+.skills__list__item.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .skills__list__item > img {
     display: block;
     margin: auto;
@@ -284,6 +295,17 @@
     padding: 2rem;
 }
 
+.career__description--inner {
+    transform: translateX(20rem);
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.career__description--inner.active {
+    transform: translateX(0rem);
+    opacity: 1;
+}
+
 .career__description--inner::before {
     content: "";
     position: absolute;
@@ -318,5 +340,34 @@
 
 .sns_icon {
     max-width: 100px;
-    margin: 0 5rem;
+    width: 30%;
+    margin: 0 5%;
+}
+
+/* 
+// books
+*/
+
+.book__list_item {
+    border: 1px solid #aaa;
+    padding: 2rem;
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.book_image_wrapper {
+    max-width: 25rem;
+}
+
+.book_content {
+    margin-left: 3rem;
+}
+
+.book_title {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.book_description {
+    font-size: 2rem;
 }

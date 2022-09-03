@@ -47,6 +47,15 @@ img {
     max-width: 100%;
 }
 
+a > img {
+    transition: 0.3s;
+}
+
+a > img:hover {
+    filter: brightness(1.1);
+    transform: scale(1.1);
+}
+
 /* 
 // section
 */

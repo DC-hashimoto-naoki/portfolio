@@ -1,4 +1,5 @@
 @media screen and (max-width: 750px) {
+
     /* 
     // works
     */
@@ -44,7 +45,11 @@
     // career
     */
 
-    .career__picture > img {
+    .career {
+        overflow-x: hidden;
+    }
+
+    .career__picture>img {
         max-width: fit-content;
         width: 15rem;
         height: 15rem;
@@ -54,11 +59,27 @@
         width: 75%;
     }
 
+    .career__description--inner {
+        transform: translateX(0);
+    }
+
     .career__description--inner::before {
         left: -1%;
     }
 
     .career__description::before {
         left: -1.30rem;
+    }
+
+    /* 
+    // books
+    */
+
+    .book__list {
+        padding: 0 2.5rem;
+    }
+
+    .book_title {
+        font-size: 3rem;
     }
 }

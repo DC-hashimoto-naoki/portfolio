@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
             'Illustrator',
         ],
         datasets: [{
-            label: 'My First Dataset',
+            label: 'skill set',
             data: [85, 80, 90, 81, 80],
             fill: true,
             backgroundColor: 'rgba(255, 99, 132, 0.2)',
@@ -33,6 +33,16 @@ window.addEventListener('DOMContentLoaded', () => {
                 },
                 suggestedMin: 0,
                 suggestedMax: 100
+            }
+        },
+        plugins: {
+            legend: {
+                labels: {
+                    // This more specific font property overrides the global property
+                    font: {
+                        size: 16
+                    }
+                }
             }
         }
     };
