@@ -23,8 +23,9 @@ html {
 
 body {
     transition: all 0.7s;
-    /* background-color: #000; */
     margin-bottom: 10rem;/* TO DO : delete */
+    /* below is for FV animation */
+    /* background-color: #000; */
 }
 
 .main {}
@@ -35,8 +36,9 @@ body {
 }
 
 .main_content {
-    /* opacity: 0; */
+    opacity: 0;
     transition: 0.7s;
+    opacity: 1;
 }
 
 .main_content.show {

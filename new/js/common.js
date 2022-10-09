@@ -2,6 +2,10 @@ window.addEventListener('DOMContentLoaded', () => {
     // FV text typing animation
     var textTyping = document.querySelector('.textTyping');
 
+    /**
+     * split to <span></span>
+     * @return void
+     */
     function splitToSpanTags() {
         var element = textTyping.textContent;
         var textBox = "";
@@ -24,7 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
             spans.forEach((span, index) => {
                 setTimeout(() => {
                     span.classList.add('show');
-                }, index * 50)
+                }, index * 25)
             })
             resolve();
         })
@@ -41,6 +45,11 @@ window.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('load', splitToSpanTags);
     window.addEventListener('load', showText);
 
+    /**
+     * change background color on <body></body>
+     * @param {Stiring} color 
+     * @return void
+     */
     function changeBackground(color) {
         const body = document.getElementsByTagName('body')[0];
         body.style.backgroundColor = color;
@@ -71,4 +80,6 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     window.addEventListener('keypress', pressEnter);
     textTyping.addEventListener('click', clickText);
+
+
 })

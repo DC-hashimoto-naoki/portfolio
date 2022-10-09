@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
         ],
         datasets: [{
             label: 'skill set',
-            data: [85, 80, 90, 81, 80],
+            data: [85, 90, 80, 81, 80],
             fill: true,
             backgroundColor: 'rgba(255, 99, 132, 0.2)',
             borderColor: 'rgb(255, 99, 132)',
@@ -32,7 +32,12 @@ window.addEventListener('DOMContentLoaded', () => {
                     display: true
                 },
                 suggestedMin: 0,
-                suggestedMax: 100
+                suggestedMax: 100,
+                pointLabels: {
+                    font: {
+                        size: 18
+                    }
+                }
             }
         },
         plugins: {

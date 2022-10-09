@@ -1,0 +1,96 @@
+body {
+    background-color: silver;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 400px;
+
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.panel {
+    background-color: wheat;
+    border: 5px solid white;
+    border-radius: 5px;
+    height: 200px;
+}
+
+.panel>ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.panel-item img {
+    width: 100px;
+    display: block;
+}
+
+.panel-item img.active {
+    animation: slot 0.5s linear infinite;
+}
+
+@keyframes slot {
+    0% {
+        transform: translateY(-312px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.panel-frame {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.panel-btn {
+    text-align: center;
+    background-color: skyblue;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 0 0 slateblue;
+    user-select: none;
+}
+
+.spin-btn {
+    background-color: tomato;
+    text-align: center;
+    padding: 5px;
+    width: 150px;
+    margin: 10px auto 0;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 4px 0 0 orangered;
+    user-select: none;
+}
+
+.panel-btn:active,
+.spin-btn:active {
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+.spin-btn.pressed,
+.panel-btn.pressed {
+    transform: translateY(4px);
+    background-color: gray;
+    box-shadow: none;
+}

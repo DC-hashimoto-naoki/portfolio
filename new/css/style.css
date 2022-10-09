@@ -15,7 +15,7 @@
 }
 
 .textTyping {
-    white-space: pre-line;
+    white-space: pre;
     font-size: 3rem;
     color: #fff;
     background-color: #1e1e1e;
@@ -65,9 +65,17 @@
 // top-image
 */
 
+.top-image {
+    min-height: 30rem;
+    margin: 0 calc(50% - 49vw);
+    padding-top: 10rem;
+}
+
 .main-title,
 .sub-title {
     text-align: center;
+    color: #fff;
+    text-shadow: #aaa 0.2rem 0.2rem;
 }
 
 .main-title {

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="container" id="app">
+      <h1 class="page-title">ネコ一覧</h1>
+      <div class="menu flex">
+        <p class="search">検索結果 <span id="result">{{filteredList.length}}件</span></p>
+        <div class="inputs flex">
+          <p><input type="checkbox" name="sell" id="sell" v-model="showCute">キュート対象</p>
+          <p><input type="checkbox" name="deliver" id="deliver" v-model="showFree">かわいさ無料</p>
+          <p>並び替え
+            <select name="order" id="order" v-model.number="sortOrder">
+              <option value="1">標準</option>
+              <option value="2">かわいい順（昇順）</option>
+              <option value="3">かわいい順（降順）</option>
+            </select>
+          </p>
+        </div>
+      </div>
+
+
+        <transition-group class="grid">
+          <div class="grid-item" v-for="cat in filteredList" v-bind:key="cat.id">
+            <div class="item-image">
+              <img v-bind:src="cat.image">
+              <template v-if="cat.isCute">
+                <span class="cute">CUTE</span>
+              </template>
+            </div>
+            <p class="item-name-en" v-html="cat.name"></p>
+            <div class="item-number flex">
+              <p class="cute-value"><span class="number">{{cat.loves | number_format}}</span> love</p>
+              <template v-if="cat.delv==0">
+                <p class="deliver-price">かわいさ無料</p>
+              </template>
+              <template v-else>
+                <p class="deliver-price">{{cat.delv}} cute</p>
+              </template>
+            </div>
+          </div>
+        </transition-group>
+      </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body, img {
+  max-width: 100%;
+}
+
+body {
+  background: #222;
+  color: #f0f0f0;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  border-bottom: 1px solid #fff;
+  margin-top: 20px;
+}
+
+.menu {
+  margin-top: 30px;
+}
+.menu .inputs p + p{
+  margin-left: 25px;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.item-image{
+  position: relative;
+}
+.item-image img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.cute{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: orangered;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  line-height: 75px;
+  font-weight: bold;
+}
+
+.item-number {
+  justify-content: center;
+}
+
+.number {
+  font-size: 24px;
+}
+
+.deliver-price {
+  margin-left: 20px;
+  background: tan;
+  padding: 0 5px;
+}
+
+.v-move {
+  transition: 0.5s;
+}

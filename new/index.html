@@ -10,40 +10,49 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sp.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- START CDNs -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- END CDNs -->
     <script src="js/chart.js"></script>
-    <!-- <script src="js/common.js"></script> -->
+    <script src="js/common.js"></script>
     <script src="js/interSection.js"></script>
+    <script src="js/slick.js"></script>
 </head>
 
 <body>
     <main class="main">
         <div class="container">
-            <section class="fv" id="fv">
+            <!-- remove fv animation -->
+            <!-- <section class="fv" id="fv">
                 <div class="terminalWindow">
                     <h2 class="terminalWindow__tab">terminal</h2>
                 </div>
                 <pre class="textTyping">
-                    {"name" : "hashimoto naoki",
-                     "gender" : "male",
-                     "age" : 30,
-                     "job" : "front-end engineer"
-                     "programing-language" : {
-                        front-end : ["html/css", "javascript"],
-                        back-end : ["php", "mysql"],
-                    },
-                     "isGlasses" : true,
-                     "hasPassion" : true,
-                     "favorite word" : "connecting dots"
-                    }
-                    PLEASE PRESS ENTER KEY OR CLICK
-                </pre>
+    {   "name" : "hashimoto naoki",
+        "gender" : "male",
+        "age" : 30,
+        "job" : "front-end engineer"
+        "programing-language" : {
+        front-end : ["html/css", "javascript"],
+        back-end : ["php", "mysql"],
+    },
+        "isGlasses" : true,
+        "hasPassion" : true,
+        "favorite word" : "connecting dots"
+    }
+    PLEASE PRESS ENTER KEY OR CLICK
+</pre>
                 <div class="fv_bg"></div>
-            </section>
+            </section> -->
 
             <div class="main_content" id="main_content">
 
-                <section class="top-image">
+                <section class="top-image" style="background-image: url(./images/fv/programming.webp);">
                     <h1 class="main-title">Hashimoto Naoki portfolio</h1>
                     <h2 class="sub-title">Web Engineer</h2>
                 </section>
@@ -57,7 +66,7 @@
                         <ul class="works__list">
                             <a class="works__list__item--link" href="./works/lp/brushup/index.html">
                                 <li class="works__list__item">
-                                    <img src="./images/works/Brushup_LP_design.jpg" alt="brushup">
+                                    <img src="./images/works/Brushup_LP_design.jpg" alt="brushup" loading="lazy">
                                     <div class="works__description">
                                         【BtoB向けLP】<br>
                                         Brush株式会社<br>
@@ -68,7 +77,7 @@
                             </a>
                             <a class="works__list__item--link" href="./works/lp/mellia/index.html">
                                 <li class="works__list__item">
-                                    <img src="./images/works/meria_hq_lp.jpg" alt="mellia">
+                                    <img src="./images/works/meria_hq_lp.jpg" alt="mellia" loading="lazy">
                                     <div class="works__description">
                                         【商品紹介LP】<br>
                                         クライアント：メリア株式会社<br>
@@ -79,7 +88,7 @@
                             </a>
                             <a class="works__list__item--link" href="./works/lp/nahls/index.html">
                                 <li class="works__list__item">
-                                    <img src="./images/works/nahlsrich.png" alt="nahlsrich">
+                                    <img src="./images/works/nahlsrich.png" alt="nahlsrich" loading="lazy">
                                     <div class="works__description">
                                         【商品紹介LP】<br>
                                         商品名：ナールスリッチ<br>
@@ -90,7 +99,7 @@
                             </a>
                             <a class="works__list__item--link" href="./works/lp/cloudthomas/index.html">
                                 <li class="works__list__item">
-                                    <img src="./images/works/cloudthomas_lp.jpg" alt="cloudthomas">
+                                    <img src="./images/works/cloudthomas_lp.jpg" alt="cloudthomas" loading="lazy">
                                     <div class="works__description">
                                         【BtoB向けLP】<br>
                                         関通株式会社<br>
@@ -101,7 +110,7 @@
                             </a>
                             <a class="works__list__item--link" href="./works/lp/cinal/index.html">
                                 <li class="works__list__item">
-                                    <img src="./images/works/cinalexia_lp_sp.jpg" alt="cinalexia_lp">
+                                    <img src="./images/works/cinalexia_lp_sp.jpg" alt="cinalexia_lp" loading="lazy">
                                     <div class="works__description">
                                         【商品紹介LP】<br>
                                         塩野義製薬<br>
@@ -112,7 +121,7 @@
                             </a>
                             <a class="works__list__item--link" href="./works/lp/life-corp/index.html">
                                 <li class="works__list__item">
-                                    <img src="./images/works/life-corp_lp.jpg" alt="life-corp">
+                                    <img src="./images/works/life-corp_lp.jpg" alt="life-corp" loading="lazy">
                                     <div class="works__description">
                                         【キャンペーンLP】<br>
                                         ライフコーポレーション<br>
@@ -129,33 +138,46 @@
                     <h2 class="section__title">APPs</h2>
                     <ul class="app__list">
                         <li class="app__list__item">
-                            <h3 class="app__list__item_title">Appタイトル</h3>
-                            <img class="app__list__item_image" src="./skills/icons/react.png" alt="">
+                            <h3 class="app__list__item_title">商品一覧ページ</h3>
+                            <a href="./works/apps/ec-cart/index.html">
+                                <img class="app__list__item_image" src="./works/apps/ec-cart/screenshot.png" alt="">
+                            </a>
                             <p class="app__list__item_description">
-                                説明文。<br>
-                                テキスト、テキスト、テキスト、テキスト
-                                テキスト、テキスト、テキスト、テキスト
+                                Vue.jsを使って商品一覧ページを作成しました。<br>
+                                商品の並び替え、検索ができます。
                             </p>
                         </li>
                         <li class="app__list__item">
-                            <h3 class="app__list__item_title">Appタイトル</h3>
-                            <img class="app__list__item_image" src="./skills/icons/react.png" alt="">
+                            <h3 class="app__list__item_title">数字タッチゲーム</h3>
+                            <a href="./works/apps/numberGame/index.html">
+                                <img class="app__list__item_image" src="./works/apps/numberGame/thumbnail.png" alt="">
+                            </a>
                             <p class="app__list__item_description">
-                                説明文。<br>
-                                テキスト、テキスト、テキスト、テキスト
-                                テキスト、テキスト、テキスト、テキスト
+                                数字を0から順番にタッチしていき、最後の数字を押せばタイマーが止まります。<br>
+                                クリアするごとに、数字のパネル数が多くなっていきます。
                             </p>
                         </li>
                         <li class="app__list__item">
-                            <h3 class="app__list__item_title">Appタイトル</h3>
-                            <img class="app__list__item_image" src="./skills/icons/react.png" alt="">
+                            <h3 class="app__list__item_title">スロットゲーム</h3>
+                            <a href="./works/apps/slotGame/index.html">
+                                <img class="app__list__item_image" src="./works/apps/slotGame/slot_thumbnail.png"
+                                    alt="">
+                            </a>
                             <p class="app__list__item_description">
-                                説明文。<br>
-                                テキスト、テキスト、テキスト、テキスト
-                                テキスト、テキスト、テキスト、テキスト
+                                「SPIN」を推すと回転がスタートし、「STOP」で各パネルが停止します。
                             </p>
                         </li>
                     </ul>
+                </section>
+
+                <section class="slider">
+                    <div class="slider--wrapper">
+                        <div class="slider__item"><img src="https://placehold.jp/350x240.png" alt=""></div>
+                        <div class="slider__item"><img src="https://placehold.jp/350x240.png" alt=""></div>
+                        <div class="slider__item"><img src="https://placehold.jp/350x240.png" alt=""></div>
+                        <div class="slider__item"><img src="https://placehold.jp/350x240.png" alt=""></div>
+                        <div class="slider__item"><img src="https://placehold.jp/350x240.png" alt=""></div>
+                    </div>
                 </section>
 
                 <section class="chart">
@@ -170,56 +192,56 @@
                         <li class="skills__list__item">
                             <img src="./skills/icons/javascript.png" alt="">
                             <p class="skill__name">JavaScript</p>
-                            <p class="skills__stars">☆☆☆☆☆</p>
+                            <p class="skills__stars">★★★★☆</p>
                             <p class="skills__years">実務経験: 2年</p>
                         </li>
                         <li class="skills__list__item">
                             <img src="./skills/icons/html.png" alt="">
                             <p class="skill__name">HTML</p>
-                            <p class="skills__stars">☆☆☆☆☆</p>
+                            <p class="skills__stars">★★★★☆</p>
                             <p class="skills__years">実務経験: 2年</p>
                         </li>
                         <li class="skills__list__item">
                             <img src="./skills/icons/css3.png" alt="">
                             <p class="skill__name">CSS</p>
-                            <p class="skills__stars">☆☆☆☆☆</p>
+                            <p class="skills__stars">★★★★☆</p>
                             <p class="skills__years">自己開発: 1年</p>
                         </li>
                         <li class="skills__list__item">
                             <img src="./skills/icons/react.png" alt="">
                             <p class="skill__name">React</p>
-                            <p class="skills__stars">☆☆☆☆☆</p>
+                            <p class="skills__stars">★★★☆☆</p>
                             <p class="skills__years">自己開発: 1年</p>
                         </li>
                         <li class="skills__list__item">
                             <img src="./skills/icons/vue-js.png" alt="">
                             <p class="skill__name">Vue.js</p>
-                            <p class="skills__stars">☆☆☆☆☆</p>
+                            <p class="skills__stars">★★★☆☆</p>
                             <p class="skills__years">自己開発: 1年</p>
                         </li>
                         <li class="skills__list__item">
                             <img src="./skills/icons/php.png" alt="">
                             <p class="skill__name">PHP</p>
-                            <p class="skills__stars">☆☆☆☆☆</p>
+                            <p class="skills__stars">★★★☆☆</p>
                             <p class="skills__years">自己開発: 1年</p>
                         </li>
                         <li class="skills__list__item">
                             <img src="./skills/icons/mysql.png" alt="">
                             <p class="skill__name">MySQL</p>
-                            <p class="skills__stars">☆☆☆☆☆</p>
+                            <p class="skills__stars">★★☆☆☆</p>
                             <p class="skills__years">自己開発: 1年</p>
                         </li>
                         <li class="skills__list__item">
                             <img src="./skills/icons/photoshop.png" alt="">
                             <p class="skill__name">Photoshop</p>
-                            <p class="skills__stars">☆☆☆☆☆</p>
-                            <p class="skills__years">自己開発: 1年</p>
+                            <p class="skills__stars">★★★★☆</p>
+                            <p class="skills__years">実務経験: 1年</p>
                         </li>
                         <li class="skills__list__item">
                             <img src="./skills/icons/illustrator.png" alt="">
                             <p class="skill__name">Illustrator</p>
-                            <p class="skills__stars">☆☆☆☆☆</p>
-                            <p class="skills__years">自己開発: 1年</p>
+                            <p class="skills__stars">★★★★☆</p>
+                            <p class="skills__years">実務経験: 1年</p>
                         </li>
                     </ul>
                 </section>
@@ -290,7 +312,8 @@
                                 <p class="career__texts">
                                     塾講師<br>
                                     受験生を担当<br>
-                                    『<a href="https://www.shinchosha.co.jp/book/215971/" target="_blank">フェルマーの最終定理</a>』を読んで、<br>
+                                    『<a href="https://www.shinchosha.co.jp/book/215971/"
+                                        target="_blank">フェルマーの最終定理</a>』を読んで、<br>
                                     数学の面白さに気づく
                                 </p>
                             </div>
@@ -318,17 +341,17 @@
                     <h2 class="section__title">SNS</h2>
                     <ul class="sns_icons_list">
                         <li class="sns_icon">
-                            <a href="">
+                            <a href="https://github.com/DC-hashimoto-naoki">
                                 <img src="./images/icons/github.png" alt="github">
                             </a>
                         </li>
                         <li class="sns_icon">
-                            <a href="">
-                                <img src="./images/icons/twitter.png" alt="github">
+                            <a href="https://twitter.com/D7Tm9NdQSkBo3Gh">
+                                <img src="./images/icons/twitter.png" alt="twitter">
                             </a>
                         </li>
                         <li class="sns_icon">
-                            <a href="">
+                            <a href="https://atcoder.jp/users/hato_taka?lang=ja">
                                 <img src="./images/icons/atcorder.svg" alt="atCorder">
                             </a>
                         </li>
@@ -347,9 +370,9 @@
                             <div class="book_content">
                                 <h3 class="book_title">リーダブルコード</h3>
                                 <p class="book_description">
-                                    概要。テキスト、テキスト、<br>
+                                    <!-- 概要。テキスト、テキスト、<br>
                                     テキスト、テキスト、テキスト、<br>
-                                    テキスト、テキスト、テキスト、
+                                    テキスト、テキスト、テキスト、 -->
                                 </p>
                             </div>
                         </li>
@@ -362,24 +385,24 @@
                             <div class="book_content">
                                 <h3 class="book_title">フェルマーの最終定理</h3>
                                 <p class="book_description">
-                                    概要。テキスト、テキスト、<br>
+                                    <!-- 概要。テキスト、テキスト、<br>
                                     テキスト、テキスト、テキスト、<br>
-                                    テキスト、テキスト、テキスト、
+                                    テキスト、テキスト、テキスト、 -->
                                 </p>
                             </div>
                         </li>
                         <li class="book__list_item">
                             <div class="book_image_wrapper">
                                 <a href="">
-                                    <img src="./images/books/readableCode.jpg" alt="リーダブルコード">
+                                    <img src="./images/books/cssComplete.jpg" alt="CSS完全設計">
                                 </a>
                             </div>
                             <div class="book_content">
-                                <h3 class="book_title">リーダブルコード</h3>
+                                <h3 class="book_title">CSS完全設計ガイド</h3>
                                 <p class="book_description">
-                                    概要。テキスト、テキスト、<br>
+                                    <!-- 概要。テキスト、テキスト、<br>
                                     テキスト、テキスト、テキスト、<br>
-                                    テキスト、テキスト、テキスト、
+                                    テキスト、テキスト、テキスト、 -->
                                 </p>
                             </div>
                         </li>
