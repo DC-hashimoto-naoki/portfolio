@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/* google font (NotoSansJP:weight@400;500;700) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+html {
+    font-size: 62.5%;
+    /* 16px(default) * 62.5% = 10px */
+}
+
+@media screen and (max-width:750px) {
+    html {
+        font-size: 1.33vw;
+        /* 10px / 750px = 1.33% */
+    }
+}
+
+.qeta-main {
+    color: #000;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", 'Noto Sans JP', sans-serif;
+    margin: auto;
+    width: 1980px;
+    max-width: 100%;
+    font-feature-settings: 'palt';
+    font-size: 1.6rem;
+    /* 16pxに戻している */
+    letter-spacing: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+.qeta-main source,
+.qeta-main img {
+    max-width: 100%;
+    display: block;
+}
+
+.qeta-main a {
+    text-decoration: none;
+    transition: .2s;
+}
+
+.qeta-main a:hover {
+    filter: brightness(1.1);
+}
+
+.qeta-main picture {
+    display: block;
+}
+
+/* js-animation */
+.fadeUp {
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.fadeUp.show {
+    opacity: 1;
+}
+
+.fadeIn {
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.fadeIn.show {
+    opacity: 1;
+}
+
+.fadeIn.cosmetic-text {
+    transition-delay: 0.7s;
+}
+
+.slide-up {
+    clip-path: inset(50% 0);
+    transition: 0.7s;
+}
+
+.slide-up.show {
+    clip-path: inset(0% 0);
+}
+
+.fv-carousel img,
+.fv-carousel source {
+    margin: auto;
+}
+
+.concept-text-content {
+    transition-delay: 0.5s;
+    transition-duration: 1.5s;
+}
+
+.cosmetic-image {
+    overflow: hidden;
+}
+
+.fv-comment {
+    transition: 0.5s;
+    transition-delay: 0.8s;
+    opacity: 0;
+}
+
+.fv-comment.active {
+    opacity: 1;
+}
+
+.js-slideIn {
+    clip-path: inset(0 100% 0 0);
+    transition: 2s;
+    transition-delay: 1s;
+    transition-timing-function: ease;
+}
+
+.js-slideIn.show {
+    clip-path: inset(0 0 0 0);
+}
+
+.js-target.transition-0 {
+    transition: 0s;
+}
+
+/* modal */
+.product-modal-window {
+    max-width: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(179, 179, 179, 0.8);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+    display: none;
+}
+
+.modal-item {
+    position: absolute;
+}
+
+.overflow-y-hidden {
+    overflow-y: hidden;
+}

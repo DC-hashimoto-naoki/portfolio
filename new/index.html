@@ -22,9 +22,21 @@
     <script src="js/common.js"></script>
     <script src="js/interSection.js"></script>
     <script src="js/slick.js"></script>
+
+    <!-- particles.js -->
+    <script src="js/particles.min.js"></script>
+    <script src="js/setting.js" defer></script>
+    <link rel="stylesheet" href="css/particles.css">
 </head>
 
 <body>
+    <div class="fv--wrapper">
+        <div id="particles-js"></div>
+        <div class="fv__content">
+            <h1 class="main-title">Hashimoto Naoki portfolio</h1>
+            <h2 class="sub-title">Web Engineer</h2>
+        </div>
+    </div>
     <main class="main">
         <div class="container">
             <!-- remove fv animation -->
@@ -51,11 +63,6 @@
             </section> -->
 
             <div class="main_content" id="main_content">
-
-                <section class="top-image" style="background-image: url(./images/fv/programming.webp);">
-                    <h1 class="main-title">Hashimoto Naoki portfolio</h1>
-                    <h2 class="sub-title">Web Engineer</h2>
-                </section>
 
                 <section class="works">
                     <h2 class="section__title">WORKS</h2>
@@ -170,7 +177,7 @@
                     </ul>
                 </section>
 
-                <section class="slider">
+                <!-- <section class="slider">
                     <div class="slider--wrapper">
                         <div class="slider__item"><img src="https://placehold.jp/350x240.png" alt=""></div>
                         <div class="slider__item"><img src="https://placehold.jp/350x240.png" alt=""></div>
@@ -178,13 +185,13 @@
                         <div class="slider__item"><img src="https://placehold.jp/350x240.png" alt=""></div>
                         <div class="slider__item"><img src="https://placehold.jp/350x240.png" alt=""></div>
                     </div>
-                </section>
+                </section> -->
 
-                <section class="chart">
+                <!-- <section class="chart">
                     <div>
                         <canvas id="myChart"></canvas>
                     </div>
-                </section>
+                </section> -->
 
                 <section class="skills">
                     <h2 class="section__title">SKILLS</h2>
@@ -260,7 +267,8 @@
                                 <p class="career__texts">
                                     大阪で生まれる。<br>
                                     小さい頃の夢は、プロ野球選手<br>
-                                    日が暮れるまで兄とキャッチボールをしていた
+                                    日が暮れるまで兄と<br>
+                                    キャッチボールをしていました
                                 </p>
                             </div>
                         </div>
@@ -276,7 +284,8 @@
                                 </div>
                                 <p class="career__texts">
                                     高校時代<br>
-                                    パソコンを触ることが好きだった<br>
+                                    エクセルとパワーポイントで<br>
+                                    遊ぶことが好きでした<br>
                                     得意教科：世界史<br>
                                     苦手教科：数学<br>
                                 </p>
@@ -312,9 +321,7 @@
                                 <p class="career__texts">
                                     塾講師<br>
                                     受験生を担当<br>
-                                    『<a href="https://www.shinchosha.co.jp/book/215971/"
-                                        target="_blank">フェルマーの最終定理</a>』を読んで、<br>
-                                    数学の面白さに気づく
+                                    数学と英語が専門科目でした。
                                 </p>
                             </div>
                         </div>
@@ -346,7 +353,7 @@
                             </a>
                         </li>
                         <li class="sns_icon">
-                            <a href="https://twitter.com/D7Tm9NdQSkBo3Gh">
+                            <a href="https://twitter.com/hato_code">
                                 <img src="./images/icons/twitter.png" alt="twitter">
                             </a>
                         </li>
@@ -358,7 +365,7 @@
                     </ul>
                 </section>
 
-                <section class="books">
+                <!-- <section class="books">
                     <h2 class="section__title">BOOKS</h2>
                     <ul class="book__list">
                         <li class="book__list_item">
@@ -370,9 +377,9 @@
                             <div class="book_content">
                                 <h3 class="book_title">リーダブルコード</h3>
                                 <p class="book_description">
-                                    <!-- 概要。テキスト、テキスト、<br>
+                                    概要。テキスト、テキスト、<br>
                                     テキスト、テキスト、テキスト、<br>
-                                    テキスト、テキスト、テキスト、 -->
+                                    テキスト、テキスト、テキスト、
                                 </p>
                             </div>
                         </li>
@@ -385,9 +392,9 @@
                             <div class="book_content">
                                 <h3 class="book_title">フェルマーの最終定理</h3>
                                 <p class="book_description">
-                                    <!-- 概要。テキスト、テキスト、<br>
+                                    概要。テキスト、テキスト、<br>
                                     テキスト、テキスト、テキスト、<br>
-                                    テキスト、テキスト、テキスト、 -->
+                                    テキスト、テキスト、テキスト、
                                 </p>
                             </div>
                         </li>
@@ -400,25 +407,18 @@
                             <div class="book_content">
                                 <h3 class="book_title">CSS完全設計ガイド</h3>
                                 <p class="book_description">
-                                    <!-- 概要。テキスト、テキスト、<br>
+                                    概要。テキスト、テキスト、<br>
                                     テキスト、テキスト、テキスト、<br>
-                                    テキスト、テキスト、テキスト、 -->
+                                    テキスト、テキスト、テキスト、
                                 </p>
                             </div>
                         </li>
                     </ul>
-                </section>
+                </section> -->
 
             </div><!-- /.main_content -->
         </div><!-- /.container -->
     </main>
-    <!-- TODO: delete -->
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 
 </html>

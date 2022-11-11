@@ -38,8 +38,8 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     }
 
-    const fv = document.getElementById('fv');
-    fv.classList.add('show');
+    // const fv = document.getElementById('fv');
+    // fv.classList.add('show');
 
 
     window.addEventListener('load', splitToSpanTags);

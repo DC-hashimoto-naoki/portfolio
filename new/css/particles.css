@@ -1,0 +1,15 @@
+#particles-js {
+    background-color: #001d32;
+    height: 80vh;
+}
+
+.fv--wrapper {
+    position: relative;
+}
+
+.fv__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

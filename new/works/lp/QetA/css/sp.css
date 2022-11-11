@@ -1,0 +1,324 @@
+@media screen and (max-width:1100px) {
+    .qeta-main {
+        max-width: 750px;
+    }
+
+    .is-pc {
+        display: none !important;
+    }
+
+    .is-sp {
+        display: block !important;
+    }
+
+    img.is-sp {
+        max-width: 100%;
+    }
+
+    /* fv */
+
+    .fv {
+        max-height: 98.8rem;
+    }
+
+    .fv-debut {
+        width: 41.2rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .fv-01-comment {
+        width: 23.4rem;
+        top: 13.5rem;
+        left: 8rem;
+    }
+
+    .fv-02-comment {
+        width: 22.9rem;
+        top: 10rem;
+        left: 8.5rem;
+    }
+
+    .fv-03-comment {
+        width: 27.6rem;
+        top: 12.5rem;
+        left: 11rem;
+    }
+
+    /* concept */
+    .logo-wrapper>img {
+        width: 27.8rem;
+    }
+
+    .concept-texts {
+        max-width: 54.4rem;
+    }
+
+    .concept-title {
+        width: 21.7rem;
+    }
+
+    .concept-text-01 {
+        width: 42.6rem;
+    }
+
+    .concept-text-02 {
+        width: 30.3rem;
+    }
+
+    .concept-text-03 {
+        width: 42.9rem;
+    }
+
+    .concept-text-04 {
+        width: 48rem;
+    }
+
+    .concept-text-05 {
+        width: 32.2rem;
+    }
+
+    .concept-text-06 {
+        width: 45.6rem;
+    }
+
+    .concept-text-07 {
+        width: 54.4rem;
+    }
+
+    .scroll-area-01 {
+        width: 6rem;
+    }
+
+    .scroll-text {
+        height: 6rem;
+    }
+
+    /* cosmetic */
+    .cosmetic-container {
+        height: 171.5rem;
+    }
+
+    .cosmetic-image {
+        background-size: cover;
+    }
+
+    .cosmetic-image01 {
+        background-image: url(../img/sp-cosmetic-image01.webp);
+        width: 51.4rem;
+        height: 38.9rem;
+    }
+
+    .cosmetic-image02 {
+        background-image: url(../img/sp-cosmetic-image02.webp);
+        width: 47rem;
+        height: 35.3rem;
+        top: 52.3rem;
+    }
+
+    .cosmetic-image03 {
+        background-image: url(../img/sp-cosmetic-image03.webp);
+        width: 30.3rem;
+        height: 22.1rem;
+        top: 94.5rem;
+    }
+
+    .cosmetic-image04 {
+        background-image: url(../img/sp-cosmetic-image04.webp);
+        width: 63.8rem;
+        height: 42.5rem;
+        bottom: 0;
+        left: 5.4rem;
+    }
+
+    .cosmetic-text01 {
+        width: 6.6rem;
+        top: 3.5rem;
+        right: 8rem;
+    }
+
+    .cosmetic-text02 {
+        width: 6.7rem;
+        top: 56rem;
+        left: 16rem;
+    }
+
+    .cosmetic-text03 {
+        width: 6.9rem;
+        bottom: 56rem;
+        right: 12rem;
+    }
+
+    /* product */
+    .product {
+        background-image: url(../img/sp-product-bg-origin.webp);
+        height: 300rem;
+    }
+
+    #qeta-main .product-title {
+        width: 20.3rem;
+    }
+
+    #qeta-main .product-subtitle {
+        width: 37.8rem;
+    }
+
+    .product-contents {
+        width: 64rem;
+    }
+
+    .product-text-list {
+        margin-top: 10rem;
+    }
+
+    .product-text-list-item {
+        width: 30.3rem;
+        margin-bottom: 3rem;
+    }
+
+    .product-text-list-item>img {
+        width: 100%;
+    }
+
+    .product-text-list-item>.product-debut {
+        width: 15.2rem;
+        margin: auto;
+    }
+
+    .product-image {
+        height: 48rem;
+    }
+
+    .product-text-content {
+        width: 21.9rem;
+    }
+
+    .product-annotation {
+        width: 37.4rem;
+        left: auto;
+        right: 2.5rem;
+    }
+
+    /* faq */
+
+    .faq-list-item {
+        max-width: 63.8rem;
+        margin: 2rem auto;
+    }
+
+    .faq-list-title {
+        margin-bottom: -0.4rem;
+    }
+
+    .faq-list-title::before {
+        right: 2.5rem;
+        top: 27%;
+    }
+
+    .faq-list-title.open::before {
+        top: 42%;
+    }
+
+    /* sns */
+    .sns-follow-us {
+        width: 14rem;
+        margin: 1rem auto 3rem;
+    }
+
+    .sns-logo {
+        width: 15rem;
+    }
+
+    .insta {
+        width: 8rem;
+    }
+
+    /* footer */
+    .footer {
+        letter-spacing: 0.05em;
+    }
+
+    .footer-logo {
+        display: flex;
+        align-items: center;
+        width: 65rem;
+        justify-content: space-between;
+    }
+
+    .footer-logo-image {
+        width: 15.7rem;
+    }
+
+    .footer-logo-text {
+        font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", 'Noto Sans JP', sans-serif;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        line-height: 1;
+        width: auto;
+        font-size: 2rem;
+        gap: 1em;
+    }
+
+    .footer-tel,
+    .footer-adress {
+        font-size: 2rem;
+    }
+
+    .footer-notion {
+        font-size: 1.4rem;
+    }
+
+    /* modal */
+    .modal-list {
+        width: 100vw;
+        height: auto;
+    }
+
+    .modal-list-item {
+        padding: 9rem 0;
+    }
+
+    .modal-list-item-content {
+        width: 75rem;
+        padding: 0 3.5rem;
+    }
+
+    .modal-btn-01,
+    .modal-btn-02 {
+        width: 61.8rem;
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto;
+    }
+
+    .modal-btn-01 {
+        top: 163rem;
+    } 
+
+    .modal-btn-02 {
+        top: 194rem;
+    }
+
+    .modal-close {
+        width: 9.6rem;
+        right: 4rem;
+        top: 5.5rem;
+    }
+
+    .modal-back {
+        width: 13.2rem;
+        right: 5rem;
+        bottom: 11rem;
+    }
+
+}
+
+@media screen and (max-width:750px) {
+    .qeta-main {
+        max-width: 100%;
+    }
+}

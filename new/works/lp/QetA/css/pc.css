@@ -1,0 +1,486 @@
+.is-sp {
+    display: none !important;
+}
+
+section {
+    max-width: fit-content;
+    margin: auto;
+}
+
+/* fv */
+.header {
+    max-width: fit-content;
+    margin: auto;
+}
+
+.fv {
+    max-height: 591px;
+}
+
+.fv-carousel {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.fv-wrapper {
+    position: relative;
+}
+
+.fv-comment {
+    position: absolute;
+}
+
+.fv-01-comment {
+    top: 217px;
+    left: 120px;
+}
+
+.fv-02-comment {
+    top: 186px;
+    right: 222px;
+}
+
+.fv-03-comment {
+    bottom: 132px;
+    left: 85px;
+}
+
+.fv-debut {
+    position: relative;
+    width: fit-content;
+    top: -13.5rem;
+    left: 66rem;
+}
+
+/* concept */
+.concept {
+    margin-top: 3rem;
+}
+
+.logo-wrapper>* {
+    width: fit-content;
+    margin: auto;
+}
+
+.concept-title {
+    margin: 6rem auto 3rem;
+}
+
+.concept-text {
+    margin: 3.5rem auto;
+}
+
+/* cosmetic */
+.cosmetic {
+    max-width: 100%;
+    position: relative;
+    margin-bottom: 10rem;
+}
+
+.cosmetic-container {
+    max-width: 100%;
+    width: 1100px;
+    height: 1654px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.cosmetic-item {
+    position: absolute;
+}
+
+.cosmetic-image {
+    background-position: 50% 50%;
+}
+
+.cosmetic-image01 {
+    top: 0;
+    left: 0;
+}
+
+.cosmetic-image01 {
+    background-image: url(../img/pc-cosmetic-image01.webp);
+    width: 691px;
+    height: 404px;
+}
+
+.cosmetic-image02 {
+    top: 527px;
+    right: 0;
+}
+
+.cosmetic-image02 {
+    background-image: url(../img/pc-cosmetic-image02.webp);
+    width: 500px;
+    height: 367px;
+}
+
+.cosmetic-image03 {
+    top: 765px;
+    left: 48px;
+}
+
+.cosmetic-image03 {
+    background-image: url(../img/pc-cosmetic-image03.webp);
+    width: 336px;
+    height: 246px;
+}
+
+.cosmetic-image04 {
+    bottom: 56px;
+    left: 0;
+}
+
+.cosmetic-image04 {
+    background-image: url(../img/pc-cosmetic-image04.webp);
+    width: 764px;
+    height: 519px;
+}
+
+.cosmetic-text01 {
+    top: 146px;
+    right: 235px;
+}
+
+.cosmetic-text02 {
+    top: 576px;
+    left: 456px;
+}
+
+.cosmetic-text03 {
+    bottom: 300px;
+    right: 160px;
+}
+
+.border {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    object-fit: cover;
+}
+
+.border-01 {
+    top: 217px;
+    height: 237px;
+}
+
+.border-02 {
+    bottom: 0;
+    height: 405px;
+}
+
+/* product */
+
+.product {
+    max-width: none;
+    width: 100%;
+    height: 160rem;
+    background-image: url(../img/pc-product-bg-origin.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0;
+    position: relative;
+}
+
+#qeta-main .product-title,
+#qeta-main .product-subtitle {
+    width: fit-content;
+    margin: auto;
+}
+
+#qeta-main .product-title {
+    padding-top: 10rem;
+}
+
+#qeta-main .product-subtitle {
+    margin-top: 3rem;
+}
+
+
+.product-contents {
+    width: 801px;
+    margin: auto;
+}
+
+.product-text-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 6rem;
+}
+
+.product-text-list-item {
+    width: 219px;
+    margin-bottom: 3rem;
+}
+
+.product-balm>.product-debut {
+    position: relative;
+    top: 10rem;
+}
+
+.product-debut {
+    width: fit-content;
+    margin: auto;
+}
+
+.product-comming {
+    margin-top: 1rem;
+}
+
+.product-image {
+    height: 35rem;
+}
+
+.product-text-content {
+    /* margin-top: 35rem; */
+}
+
+.product-annotation {
+    position: absolute;
+    bottom: 2rem;
+    left: 55%;
+}
+
+/* faq */
+
+.faq {
+    padding-top: 8rem;
+}
+
+.faq-title {
+    width: fit-content;
+    margin: auto;
+}
+
+.faq-list-item {
+    max-width: 803px;
+    margin: 15px auto;
+}
+
+.faq-list-title {
+    margin-bottom: -4px;
+    position: relative;
+}
+
+.faq-list-title::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border-right: 1px solid #5b5b5b;    
+    border-top: 1px solid #5b5b5b;    
+    position: absolute;
+    top: 25%;
+    right: 3rem;
+    transform: rotate(135deg);
+}
+
+.faq-list-title.open::before {
+    transform: rotate(-45deg);
+    top: 40%;
+}
+
+/* sns */
+.scroll-area {
+    width: 3rem;
+    height: 7rem;
+    margin: auto;
+    position: relative;
+}
+
+.scroll-area-01 {
+    width: 5rem;
+    height: 15rem;
+    margin-bottom: -6rem;
+    z-index: 100;
+}
+
+.scroll-area-02 {
+    margin-top: 5rem;
+}
+
+.scroll-area-03 {
+    width: 5rem;
+    margin-top: 3rem;
+}
+
+.scroll-bar {
+    width: 1px;
+    height: 100%;
+    background: #7e7e7e;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.scroll-circle {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #7e7e7e;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    animation: scroll-bar 2s infinite linear;
+}
+
+.scroll-area-02>.scroll-circle {
+    animation-duration: 1.5s;
+}
+
+.scroll-text {
+    position: absolute;
+    right: 0;
+}
+
+@keyframes scroll-bar {
+    from {
+        top: 0%
+    }
+
+    to {
+        top: 100%
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+
+.sns {
+    margin-bottom: 6rem;
+}
+
+.sns-follow-us {
+    width: fit-content;
+    margin: 2rem auto;
+}
+
+.sns-list {
+    display: flex;
+    gap: 3rem;
+}
+
+.horizon {
+    color: #5b5b5b;
+}
+
+/* footer */
+.footer {
+    margin-bottom: 5rem;
+    font-family: 'ヒラギノ角ゴ Std', "Hiragino Kaku Gothic ProN", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", 'Noto Sans JP', sans-serif;
+    color: #5b5b5b;
+    margin-top: 2rem;
+}
+
+.footer-logo-image,
+.footer-logo-text {
+    width: fit-content;
+    margin: auto;
+}
+
+.footer-logo-text {
+    color: #2d87ae;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2.5rem;
+    font-size: 1.4rem;
+    margin: 2rem auto 0;
+    width: fit-content;
+}
+
+.footer-link-item {
+    text-decoration: underline;
+}
+
+.footer-link-item>a {
+    color: #7e7e7e;
+}
+
+.footer-banner {
+    width: fit-content;
+    margin: 3rem auto;
+}
+
+.footer-tel,
+.footer-adress,
+.footer-notion {
+    text-align: center;
+}
+
+.footer-tel,
+.footer-adress {
+    font-size: 1.6rem;
+}
+
+.footer-secure img {
+    width: fit-content;
+    margin: 2rem auto;
+}
+
+.footer-notion {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+/* #footer */
+.cfx {
+    display: flex;
+    align-items: center;
+    width: 94%;
+    margin: 0 3%;
+}
+
+#footer ul li.norton {
+    float: left;
+    width: 30%;
+    margin-left: 20%;
+}
+
+/* modal window */
+.modal-list {
+    width: 905px;
+    height: 1057px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.modal-list-item {
+    padding: 5rem 0;
+    position: relative;
+}
+
+.modal-btn-01,
+.modal-btn-02 {
+    top: 573px;
+}
+
+.modal-btn-01 {
+    left: 47px;
+}
+
+.modal-btn-02 {
+    right: 47px;
+}
+
+.modal-close {
+    top: 2rem;
+    right: 0rem;
+    cursor: pointer;
+}
+
+.modal-back {
+    bottom: 6rem;
+    right: 2rem;
+    cursor: pointer;
+}
