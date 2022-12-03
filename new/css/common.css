@@ -45,16 +45,21 @@ body {
     opacity: 1;
 }
 
-img {
+img, video {
     max-width: 100%;
 }
 
-a > img {
+a > img,
+a > video {
     transition: 0.3s;
 }
 
 a > img:hover {
     filter: brightness(1.1);
+    transform: scale(1.1);
+}
+
+a > video:hover {
     transform: scale(1.1);
 }
 

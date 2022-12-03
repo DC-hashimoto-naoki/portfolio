@@ -79,7 +79,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
     window.addEventListener('keypress', pressEnter);
-    textTyping.addEventListener('click', clickText);
+    // textTyping.addEventListener('click', clickText);
 
 
 })

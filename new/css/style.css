@@ -179,7 +179,9 @@
 
 .app__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 5%;
 }
 
 .app__list__item {
@@ -193,7 +195,11 @@
 
 .app__list__item_image {
     display: block;
-    margin: auto;
+    margin: 0 auto;
+}
+
+.app__list__item_image:hover {
+    margin: 2rem auto;
 }
 
 .app__list__item_description {
