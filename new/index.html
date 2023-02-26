@@ -18,8 +18,8 @@
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- END CDNs -->
-    <script src="js/chart.js"></script>
-    <script src="js/common.js"></script>
+    <!-- <script src="js/chart.js"></script> -->
+    <!-- <script src="js/common.js"></script> -->
     <script src="js/interSection.js"></script>
     <script src="js/slick.js"></script>
 
@@ -27,6 +27,15 @@
     <script src="js/particles.min.js"></script>
     <script src="js/setting.js" defer></script>
     <link rel="stylesheet" href="css/particles.css">
+
+    <!-- heat MAP -->
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "fjk48fcxrl");
+    </script>
 </head>
 
 <body>
@@ -64,7 +73,8 @@
 
             <div class="main_content" id="main_content">
 
-                <section class="works">
+                <!-- XXX: START LP contents -->
+                <!-- <section class="works">
                     <h2 class="section__title">WORKS</h2>
                     <p class="works__id-pass">
                         ベーシック認証のIDとpasswordは、「<strong>code</strong>」です。
@@ -73,82 +83,115 @@
                         <ul class="works__list">
                             <a class="works__list__item--link" href="./works/lp/brushup/index.html">
                                 <li class="works__list__item">
-                                    <img src="./images/works/Brushup_LP_design.jpg" alt="brushup" loading="lazy">
+                                    <picture>
+                                        <source srcset="./images/works/webp/Brushup_LP_design.webp" type="image/webp">
+                                        <img src="./images/works/Brushup_LP_design.jpg" alt="brushup" loading="lazy">
+                                    </picture>
                                     <div class="works__description">
                                         【BtoB向けLP】<br>
                                         Brush株式会社<br>
-                                        制作期間：５日間<br>
-                                        制作予算：80万円
+                                        制作期間：５日間
                                     </div>
                                 </li>
                             </a>
                             <a class="works__list__item--link" href="./works/lp/mellia/index.html">
                                 <li class="works__list__item">
-                                    <img src="./images/works/meria_hq_lp.jpg" alt="mellia" loading="lazy">
+                                    <picture>
+                                        <source srcset="./images/works/webp/meria_hq_lp.webp" type="image/webp">
+                                        <img src="./images/works/meria_hq_lp.jpg" alt="mellia" loading="lazy">
+                                    </picture>
                                     <div class="works__description">
                                         【商品紹介LP】<br>
                                         クライアント：メリア株式会社<br>
-                                        制作期間：５日間<br>
-                                        制作予算：80万円
+                                        制作期間：５日間
                                     </div>
                                 </li>
                             </a>
                             <a class="works__list__item--link" href="./works/lp/nahls/index.html">
                                 <li class="works__list__item">
-                                    <img src="./images/works/nahlsrich.png" alt="nahlsrich" loading="lazy">
+                                    <picture>
+                                        <source srcset="./images/works/webp/nahlsrich.webp" type="image/webp">
+                                        <img src="./images/works/nahlsrich.png" alt="nahlsrich" loading="lazy">
+                                    </picture>
                                     <div class="works__description">
                                         【商品紹介LP】<br>
                                         商品名：ナールスリッチ<br>
-                                        制作期間：３日間<br>
-                                        制作予算：100万円
+                                        制作期間：３日間
                                     </div>
                                 </li>
                             </a>
                             <a class="works__list__item--link" href="./works/lp/cloudthomas/index.html">
                                 <li class="works__list__item">
-                                    <img src="./images/works/cloudthomas_lp.jpg" alt="cloudthomas" loading="lazy">
+                                    <picture>
+                                        <source srcset="./images/works/webp/cloudthomas_lp.webp" type="image/webp">
+                                        <img src="./images/works/cloudthomas_lp.jpg" alt="cloudthomas" loading="lazy">
+                                    </picture>
                                     <div class="works__description">
                                         【BtoB向けLP】<br>
                                         関通株式会社<br>
-                                        制作期間：４日間<br>
-                                        制作予算：75万円
+                                        制作期間：４日間
                                     </div>
                                 </li>
                             </a>
                             <a class="works__list__item--link" href="./works/lp/cinal/index.html">
                                 <li class="works__list__item">
-                                    <img src="./images/works/cinalexia_lp_sp.jpg" alt="cinalexia_lp" loading="lazy">
+                                    <picture>
+                                        <source srcset="./images/works/webp/cinalexia_lp_sp.webp" type="image/webp">
+                                        <img src="./images/works/cinalexia_lp_sp.jpg" alt="cinalexia_lp" loading="lazy">
+                                    </picture>
                                     <div class="works__description">
                                         【商品紹介LP】<br>
                                         塩野義製薬<br>
-                                        制作期間：5日間<br>
-                                        制作予算：120万円
+                                        制作期間：5日間
                                     </div>
                                 </li>
                             </a>
                             <a class="works__list__item--link" href="./works/lp/life-corp/index.html">
                                 <li class="works__list__item">
-                                    <img src="./images/works/life-corp_lp.jpg" alt="life-corp" loading="lazy">
+                                    <picture>
+                                        <source srcset="./images/works/webp/life-corp_lp.webp" type="image/webp">
+                                        <img src="./images/works/life-corp_lp.jpg" alt="life-corp" loading="lazy">
+                                    </picture>
                                     <div class="works__description">
                                         【キャンペーンLP】<br>
                                         ライフコーポレーション<br>
-                                        制作期間：4日間<br>
-                                        制作予算：80万円
+                                        制作期間：4日間
                                     </div>
                                 </li>
                             </a>
                         </ul>
                     </div>
-                </section>
+                </section> -->
+                <!-- XXX: END LP contents -->
 
                 <section class="apps">
                     <h2 class="section__title">APPs</h2>
                     <ul class="app__list">
                         <li class="app__list__item">
+                            <h3 class="app__list__item_title">カレンダーアプリ</h3>
+                            <a href="https://hashimoto-naoki.com/new/works/apps/calendar/">
+                                <video class="app__list__item_image" src="./works/apps/calendar/calendar.mp4" loop
+                                    muted autoplay playsinline></video>
+                            </a>
+                            <p class="app__list__item_description">
+                                ReactとTailwind CSSを使って、カレンダーアプリを作りました。
+                            </p>
+                        </li>
+                        <li class="app__list__item">
+                            <h3 class="app__list__item_title">ログインフォーム</h3>
+                            <a href="https://hashimoto-naoki.com/new/works/apps/login-form/">
+                                <video class="app__list__item_image" src="./works/apps/login_form/login.mp4" loop
+                                    muted autoplay playsinline></video>
+                            </a>
+                            <p class="app__list__item_description">
+                                ReactとMaterial UIを使って、ログインフォームを作りました。
+                            </p>
+                        </li>
+                        <li class="app__list__item">
                             <h3 class="app__list__item_title">犬画像 アプリ</h3>
                             <a href="https://hashimoto-naoki.com/new/works/apps/nextJs/dogImages/">
                                 <video class="app__list__item_image" src="./works/apps/dogImages/dogImgApp.mp4" loop
-                                    autoplay playsinline></video>
+                                    muted autoplay playsinline></video>
                             </a>
                             <p class="app__list__item_description">
                                 Next.jsとtypescriptを使って、犬の画像アプリを作りました。
@@ -158,7 +201,7 @@
                             <h3 class="app__list__item_title">TO DO アプリ</h3>
                             <a href="https://hashimoto-naoki.com/new/works/apps/react-todos/index.html">
                                 <video class="app__list__item_image" src="./works/apps/react-todos/howToUse.mp4" loop
-                                    autoplay playsinline></video>
+                                    muted autoplay playsinline></video>
                             </a>
                             <p class="app__list__item_description">
                                 Reactを使って、TO DO アプリを作りました。
@@ -168,7 +211,7 @@
                             <h3 class="app__list__item_title">商品一覧ページ</h3>
                             <a href="./works/apps/ec-cart/index.html">
                                 <video class="app__list__item_image" src="./works/apps/ec-cart/screenshot.mp4"
-                                    poster="./works/apps/ec-cart/screenshot.png" loop autoplay playsinline></video>
+                                    poster="./works/apps/ec-cart/screenshot.png" loop muted autoplay playsinline></video>
                             </a>
                             <p class="app__list__item_description">
                                 Vue.jsを使って商品一覧ページを作成しました。<br>
@@ -179,7 +222,7 @@
                             <h3 class="app__list__item_title">数字タッチゲーム</h3>
                             <a href="./works/apps/numberGame/index.html">
                                 <video class="app__list__item_image" src="./works/apps/numberGame/thumbnail.mp4"
-                                    poster="./works/apps/numberGame/thumbnail.png" loop autoplay playsinline></video>
+                                    poster="./works/apps/numberGame/thumbnail.png" loop muted autoplay playsinline></video>
                             </a>
                             <p class="app__list__item_description">
                                 数字を0から順番にタッチしていき、最後の数字を押せばタイマーが止まります。<br>
@@ -190,7 +233,7 @@
                             <h3 class="app__list__item_title">スロットゲーム</h3>
                             <a href="./works/apps/slotGame/index.html">
                                 <video class="app__list__item_image" src="./works/apps/slotGame/slot_thumbnail.mp4"
-                                    poster="./works/apps/slotGame/slot_thumbnail.png" loop autoplay playsinline></video>
+                                    poster="./works/apps/slotGame/slot_thumbnail.png" loop muted autoplay playsinline></video>
                             </a>
                             <p class="app__list__item_description">
                                 「SPIN」を推すと回転がスタートし、「STOP」で各パネルが停止します。

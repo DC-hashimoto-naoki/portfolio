@@ -142,7 +142,7 @@
 }
 
 
-.works__list__item > img {
+.works__list__item  img {
     max-width: 100%;
     width: 100%;
     object-fit: cover;
@@ -150,7 +150,7 @@
     position: relative;
 }
 
-.works__list__item:hover > img {
+.works__list__item:hover  img {
     transform: translateY(-100rem);
 }
 
@@ -186,6 +186,10 @@
 
 .app__list__item {
     width: 30%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 5%;
 }
 
 .app__list__item_title {
@@ -195,7 +199,7 @@
 
 .app__list__item_image {
     display: block;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 .app__list__item_image:hover {
